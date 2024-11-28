@@ -4,5 +4,6 @@ Custom Android ROM that aims to revive old phones.
 Updates are here, and RevivalOS modded code, and more!
 # Warning!
 Please, do not steal my code, thanks.
+If you can see this, maybe the server went down.
 # Early update and coding.
 Version:0.1 (Marshmallow based)
