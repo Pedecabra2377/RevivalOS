@@ -1,11 +1,31 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 	<head>
-		<title>KitKat Light - Holo Web</title>
+		<title>Holo Web</title>
 		<link rel="stylesheet" type="text/css" href="holo-base-elements.css" />
-		<link rel="stylesheet" type="text/css" href="holo-kk-light-elements.css" />
+		<link rel="stylesheet" type="text/css" href="holo-ics-dark-elements.css" />
+		<link rel="stylesheet" type="text/css" href="holo-ics-light-elements.css" media="(prefers-color-scheme: light)" />
 		<link rel="stylesheet" type="text/css" href="holo-base-widgets.css" />
-		<link rel="stylesheet" type="text/css" href="holo-kk-light-widgets.css" />
+		<link rel="stylesheet" type="text/css" href="holo-ics-dark-widgets.css" />
+		<link rel="stylesheet" type="text/css" href="holo-ics-light-widgets.css" media="(prefers-color-scheme: light)" />
+		<style type="text/css">
+			h2 {
+				text-transform: uppercase;
+				font-size: 90%;
+				margin: 0;
+				padding: 4px 8px;
+				border-bottom-style: solid;
+				border-bottom-width: 1px;
+				border-bottom-color: #262626;
+				border-bottom-color: rgba(255, 255, 255, 0.15);
+				color: rgba(255, 255, 255, 0.75);
+			}
+			@media (prefers-color-scheme: light) {
+				h2 {
+					color: rgba(0, 0, 0, 0.75);
+				}
+			}
+		</style>
 		
 		<script type="text/javascript" src="holo-touch.js"></script>
 		
@@ -19,48 +39,43 @@
 	</head>
 	<body>
 		<header class="holo-actionBar">
-			<button class="holo-title holo-up" onclick="window.open('index.html', '_self');">
+			<span class="holo-title" role="heading" aria-level="1">
 				<img src="icon_48.png" />
-				KitKat Light
-			</button>
-			<button style="float:right;">Button</button>
+				Holo Web
+			</span>
 		</header>
-		<p>This is a demo of the KitKat Holo Light theme:</p>
-		<button>Button</button>
-		<button disabled>Disabled</button>
-		<br />
-		<input type="radio" name="radioset1" />
-		<input type="radio" name="radioset1" checked />
-		<input type="radio" name="radioset2" disabled />
-		<input type="radio" name="radioset2" checked disabled />
-		<br />
-		<input type="checkbox" />
-		<input type="checkbox" checked />
-		<input type="checkbox" disabled />
-		<input type="checkbox" checked disabled />
-		<br />
-		<select>
-			<option>Bacon</option>
-			<option>Ipsum</option>
-			<option>Dolor</option>
-			<option>Sit</option>
-			<option>Amet</option>
-		</select>
-		<br /><br />
-		<input type="range" min="0" max="10" value="5" />
-		<br /><br />
-		<input type="range" min="0" max="10" value="5" disabled />
-		<br /><br />
-		<progress value="0.5"></progress>
-		<br /><br />
+		<p>
+			Holo Web is a CSS library that attempts to imitate the Android &ldquo;Holo&rdquo; themes with CSS.  Simply adding the stylesheets will instantly Holo-theme any site.  With a few tweaks, the site can also add more Android-like UI elements, such as Holo-themed action bars.
+		</p>
+		<h2>Demos</h2>
 		<ul class="holo-list">
-			<li>Item 1</li>
-			<li>Item 2</li>
-			<li><button style="width: 100%; width: calc(100% + 32px);">Button 1</button></li>
-			<li><button style="width: 100%; width: calc(100% + 32px);">Button 2</button></li>
+			<li>
+				<a role="button" href="demo-hc-light.html">Honeycomb Light</a>
+			</li>
+			<li>
+				<a role="button" href="demo-hc-dark.html">Honeycomb Dark</a>
+			</li>
+			<li>
+				<a role="button" href="demo-ics-light.html">Ice Cream Sandwich Light</a>
+			</li>
+			<li>
+				<a role="button" href="demo-ics-dark.html">Ice Cream Sandwich Dark</a>
+			</li>
+			<li>
+				<a role="button" href="demo-kk-light.html">KitKat Light</a>
+			</li>
+			<li>
+				<a role="button" href="demo-kk-dark.html">KitKat Dark</a>
+			</li>
 		</ul>
-		<p>Bacon ipsum dolor sit amet incididunt cillum consectetur, prosciutto venison esse voluptate. Tenderloin pariatur elit, meatball bresaola in ad ullamco aute biltong bacon. <a href="demo-kk-dark.html">This is a link to the Holo Dark demo.</a> Dolor ground round boudin cow. Biltong minim esse, ground round veniam anim filet mignon mollit short loin tri-tip ad. Ham hock cupidatat irure, pastrami occaecat flank deserunt beef ribeye ex ad. Dolore cillum sirloin, pork tri-tip excepteur quis tenderloin ham.</p>
-		<footer class="holo-actionBar"><button onclick="window.open('demo-kk-dark.html', '_self');" style="width: 100%; padding-left: 0; padding-right: 0;">Switch to dark theme</button></footer>
+		<p>
+			Developed by <a href="http://zmyaro.com" target="_blank">Zachary Yaro</a>.
+		</p>
+		<p>
+			Find out more about Holo Web on <a href="https://github.com/zmyaro/holo-web" target="_blank">GitHub</a>.
+		</p>
+		<p>
+			Following Google's replacement of Holo design on Android with Material Design, active development of Holo Web has ceased.  You may wish to try its spiritual successor, <a href="https://materialz.dev" target="_blank">MaterialZ</a>.
+		</p>
 	</body>
 </html>
-
