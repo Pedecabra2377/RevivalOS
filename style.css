@@ -1,183 +1,231 @@
-*{
-    margin: 0px;
-    padding: 0px;
+/* Base Holo styles for elements
+ * Part of the Holo Web CSS library
+ *
+ * Copyright 2012-2015 Zachary Yaro
+ * Released under the MIT license
+ * http://holo.zmyaro.com/LICENSE.txt
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
+
+::selection {
+	background-color: #33B5E5;
+	background-color: rgba(51, 181, 229, 0.5);
 }
-.Background{
-    height: 100%;
-    width: 100%;
-    float: left;
+::-moz-selection {
+	background-color: #33B5E5;
+	background-color: rgba(51, 181, 229, 0.5);
 }
-.topbar{
-    height: 50px;
-    width: 100%;
-    float: left;
-    position: sticky;
-    top: 0px;
-    background-color: white;
+
+body {
+	font-family: Roboto, "Droid Sans", sans-serif;
+	margin: 0;
+	padding: 16px;
 }
-.logo{
-    height: 100%;
-    width: 15%;
-    float: left;
+body:before { /* This is used for the background gradient */
+	z-index: -1000;
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 }
-.imagelogo{
-    height: 100%;
-    width: 40%;
-    float: left;
+
+a {
+	color: #33B5E5;
 }
-.imagelogo img{
-height: 70%;
-width: 50%;
-margin-top: 5%;
-float: right;
+
+button, *[role="button"], input, select {
+	-webkit-tap-highlight-color: transparent !important;
+	text-decoration: none;
+	cursor: default;
 }
-.logoname{
-    height: 100%;
-    width: 60%;
-    float: left;
+
+
+input[type="radio"], input[type="checkbox"], select:not([size]), select[size="1"],
+input[type="range"], input[type="range"]::-webkit-slider-thumb  {
+	-webkit-appearance: none;
+	     -o-appearance: none;
+	        appearance: none;
 }
-.menu{
-    height: 100%;
-    width: 75%;
-    float: left;
+
+button, *[role="button"],
+input[type="button"], input[type="submit"], input[type="reset"], input[type="radio"], input[type="checkbox"] {
+	outline-style: none;
+	outline-width: 0px;
 }
-.menu ul{
-    height: 100%;
-    width: 100%;
-    float: left;
+button, *[role="button"],
+input[type="button"], input[type="submit"], input[type="reset"],
+select:not([size]), select[size="1"] {
+	margin: 6px;
+	padding: 4px 12px;
+	
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
+	-webkit-border-radius: 1px;
+	   -moz-border-radius: 1px;
+	        border-radius: 1px;
+	outline-style: none;
+	outline-width: 0px;
+	
+	font: inherit;
 }
-.menu ul li{
-    display: inline-block;
-    list-style-type: none;
-    margin-left: 20px;
-    margin-top: 15px;
+button, *[role="button"],
+input[type="button"], input[type="submit"], input[type="reset"] {
+	display: inline-block;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	   -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
-.menu ul li a{
-    text-decoration: none;
-    color: rgb(109,109,109);
+/* The “active” class is used to force the appearance of the active/pressed state */
+button:enabled:active, *[role="button"]:active,
+input[type="button"]:enabled:active, input[type="submit"]:enabled:active, input[type="reset"]:enabled:active,
+select:active, select[size="1"]:active,
+button:enabled.active, *[role="button"].active,
+input[type="button"]:enabled.active, input[type="submit"]:enabled.active, input[type="reset"]:enabled.active,
+select.active, select[size="1"].active {
+	-webkit-box-shadow: 0px 0px 0px 4px rgba(51, 181, 229, 0.4);
+	   -moz-box-shadow: 0px 0px 0px 4px rgba(51, 181, 229, 0.4);
+	        box-shadow: 0px 0px 0px 4px rgba(51, 181, 229, 0.4);
 }
-.help{
-    height: 100%;
-    width: 10%;
-    float: left;
+
+select:not([size]), select[size="1"] {	
+	background-color: transparent;
+	border-width: 0 0 1px 0;
 }
-.iconssearch{
-   height: 100%;
-   width: 33.33%;
-   float: left; 
-   text-align: center;
+select::-ms-expand { /* Drop-down arrow in IE */
+	display: none;
 }
-.iconssearch i{
-    font-size: 20px;
-    margin-top: 15px;
+
+input[type="radio"], input[type="checkbox"] {
+	margin: 10px;
+	width: 18px;
+	height: 18px;
+	
+	border-style: solid;
+	border-width: 1px;
+	
+	background-color: transparent;
+	background-repeat: no-repeat;
 }
-.emailframe{
-    height: 60%;
-    width:60%;
-    float: left;
-    border: 1px solid black;
-    border-radius: 50%;
-    margin: 7px;
-    background-image: url("https://www.bergwelten.com/files/article/images/berge-natur.jpg");
-    background-size: 100% 100%;
+input[type="radio"]::-ms-check, input[type="checkbox"]::-ms-check {
+	display: none;
 }
-.emptyspace{
-    height: 100%;
-    width: 10%;
-    float: left;
-    background-color: white;
+input[type="radio"] {
+	-webkit-border-radius: 26px;
+	   -moz-border-radius: 26px;
+	        border-radius: 26px;
 }
-.optionmenu{
-    height: 100px;
-    width: 90%;
-    float: left;
+input[type="checkbox"] {
+	-webkit-border-radius: 1px;
+	   -moz-border-radius: 1px;
+	        border-radius: 1px;
+	background-position: left bottom;
 }
-.optionmenu ul li button{
-    height: 30px;
-    width: 120px;
-    border: 1px solid black;
-    border-radius: 20px;
-    color: black;
-    margin-top: 30px;
-    margin-left: 20px;
-    background-color: white;
+
+input[type="range"], progress {
+	height: 2px;
+	margin: 8px 6px;
+	border-style: none;
+	border-width: 0;
+	outline-style: none;
+	outline-width: 0;
+	overflow: visible;
 }
-.optionmenu ul li{
-    list-style-type: none;
-    display: inline-block;
+input[type="range"] *, input[type="range"] {
+	overflow: visible;
 }
-.topchart{
-    height: 40px;
-    width: 90%;
-    float: left;
+input[type="range"]::-moz-range-track {
+	border-style: none;
+	border-width: 0;
 }
-.topchart p{
-    font-family: 'Ubuntu', sans-serif;
-    margin-left: 20px;
-    font-size: 20px;
+input[type="range"]::-ms-track {
+	overflow: visible;
+	border-style: none;
+	border-width: 0;
 }
-.optmenu2{
-    height: 60px;
-    width: 90%;
-    float: left;
+input[type="range"]::-ms-ticks-before, input[type="range"]::-ms-ticks-after {	
+	display: none;
 }
-.optmenu2 li{
-    list-style-type: none;
-    display: inline-block;
+
+input[type="range"]::-webkit-slider-thumb {
+	width: 28px;
+	height: 28px;
+	border: 2px solid transparent;
+	-webkit-border-radius: 14px;
+	   -moz-border-radius: 14px;
+	        border-radius: 14px;
 }
-.optmenu2 button{
-    height: 30px;
-    width: 110px;
-    border: 1px solid black;
-    border-radius: 20px;
-    margin-top: 10px;
-    margin-left: 20px;
-    background-color: white;
+input[type="range"]::-moz-range-thumb {
+	width: 28px;
+	height: 28px;
+	border: 2px solid transparent;
+	-moz-border-radius: 14px;
+	     border-radius: 14px;
 }
-.optmenu2 a{
-    text-decoration: none;
-    color: black;
+input[type="range"]::-ms-thumb {
+	width: 28px;
+	height: 28px;
+	border: 2px solid transparent;
+	border-radius: 14px;
 }
-.Appscontainer{
-    height: 300px;
-    width: 90%;
-    float: left;
+input[type="range"]:focus::-webkit-slider-thumb, input[type="range"]:disabled::-webkit-slider-thumb {
+	width: 24px;
+	height: 24px;
+	-webkit-border-radius: 12px;
+	        border-radius: 12px;
 }
-.container1{
-    height: 33.33%;
-    width: 100%;
-    float: left;
+input[type="range"]:focus:not(:active)::-moz-range-thumb, input[type="range"]:disabled::-moz-range-thumb {
+	width: 24px;
+	height: 24px;
+	-moz-border-radius: 12px;
+	     border-radius: 12px;
 }
-.apps{
-    height:100%;
-    width: 33.33%;
-    float: left;
+input[type="range"]:focus::-ms-thumb, input[type="range"]:disabled::-ms-thumb {
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
 }
-.num{
-    height: 100%;
-    width: 10%;
-    float: left;
-    background-color: white;
-    text-align: center;
+
+progress::-webkit-progress-bar-value, progress::-webkit-progress-value {
+	position: relative;
+	overflow: visible;
 }
-.num p{
-    font-size: 20px;
-    margin-top: 30px;
+progress::-moz-progress-bar {
+	position: relative;
+	overflow: visible;
 }
-.appico{
-    height: 80%;
-    width: 20%;
-    float: left;
+progress::-ms-fill {
+	position: relative;
+	overflow: visible;
 }
-.appico img{
-    height: 100%;
-    width: 100%;
+progress::-webkit-progress-bar-value:after, progress::-webkit-progress-value:after {
+	content: "";
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 10px;
+	height: 2px;
 }
-.appinfo{
-    height: 80%;
-    width: 40%;
-    float: left;
+progress::-moz-progress-bar:after {
+	content: "";
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 10px;
+	height: 2px;
 }
-.appinfo p{
-    margin-left: 10px;
+progress::-ms-fill {
+	content: "";
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 10px;
+	height: 2px;
+}
+
+*:disabled {
+	opacity: 0.3;
 }
