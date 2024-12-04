@@ -1,353 +1,277 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width" /><!-- Do not change this! -->
-		
-		<!-- Stylesheets -->
-		<!-- jQuery and jQuery Mobile -->
-		<link rel="stylesheet" type="text/css" href="./themes/AndroidHolo.min.css" /><!-- ThemeRoller theme -->
-		<link rel="stylesheet" type="text/css" href="./themes/jquery.mobile.icons-1.4.5.min.css" />
-		<link rel="stylesheet" type="text/css" href="./themes/jquery.mobile.structure-1.4.5.min.css" />
-		
-		<!-- jpHolo theme -->
-		<link rel="stylesheet" type="text/css" href="./themes/jpholo.css" />
-		<link rel="stylesheet" type="text/css" href="./themes/jpholo.splitview.css" />
-		<link rel="stylesheet" type="text/css" href="./themes/jpholo.cards.css" />
-		<link rel="stylesheet" type="text/css" href="./themes/jpholo.spinner.css" />
-		<link rel="stylesheet" type="text/css" href="./themes/jpholo.smartphone.css" id="sizeStylesheet" />
-		
-		<!-- JavaScript -->
-		<!-- Cordova PhoneGap --><!-- exclude the scripts below if you are not deploying with PhoneGap
-		<script type="text/javascript" src="./cordova.js"></script>
-		<script type="text/javascript" src="./js/backgroundService-3.1.0.js"></script>
-		<script type="text/javascript" src="./js/cordova_custom_plugins.js"></script> -->
-		
-		<!-- jQuery -->
-		<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
-		
-		<!-- jQuery Mobile -->
-		<script type="text/javascript" src="./js/jquery.mobile.settings.js"></script><!-- this must be loaded before jQuery Mobile -->
-		<script type="text/javascript" src="./js/jquery.mobile-1.4.5.min.js"></script>
-		
-		<!-- Other frameworks -->
-		<script type="text/javascript" src="./js/fastclick.js"></script><!-- for speeding op tap events, load this AFTER jQuery Mobile -->
-		
-		<!-- Application -->
-		<!-- Set document, used in jpholo.core.js -->
-		<script type="text/javascript">
-			window.indexFile = "main.html";
-			window.phonegapExcluded = true; // set this value to either true or false, depending on if you load the Cordova PhoneGap scripts.
-		</script>
-		<!-- jpHolo core -->
-		<script type="text/javascript" src="./js/jpholo.core.js"></script>
-		<script type="text/javascript" src="./js/jpholo.core.plugins.js"></script>
-		<script type="text/javascript" src="./js/jpholo.core.services.js"></script>
-		<!-- your scripts -->
-		<script type="text/javascript" src="./js/application.js"></script>
-		
-		<title>Droid Market</title>
-	</head>
-	<body>
-		<!-- exclude the landingPage if you are not deploying with PhoneGap
-		<div id="landingPage" data-role="page" data-theme="b">
-			<div role="main" class="ui-content" data-theme="b">
-			</div>
-		</div>-->
-	
-		<div id="indexPage" data-role="page" data-theme="a"><!-- id to tie the page event to this specific page -->
-			
-			<!-- left panel  -->
-			<div id="panelMenuIndex" data-role="panel" data-theme="b" data-position="left" data-display="overlay" data-dismissible="true" data-position-fixed="true" data-swipe-close="true" data-animate="true" class="transparant">
-				<ul id="panelMenuIndexUL" data-role="listview"></ul>
-			</div><!-- here you see why in the javascript there is a page event: initPageVarsOnShow('Index'); and: initPageVarsOnCreate('Index'); -->
-			<!-- /panel -->
-			
-			<!-- right panel  -->
-			<div id="panelMenuRightIndex" data-role="panel" data-theme="b" data-position="right" data-display="overlay" data-dismissible="true" data-position-fixed="true" data-swipe-close="true" data-animate="true" class="transparant">
-				<ul id="panelMenuRightIndexUL" data-role="listview"></ul>
-			</div><!-- here you see why in the javascript there is a page event: initPageVarsOnShow('Index'); and: initPageVarsOnCreate('Index'); -->
-			<!-- /panel -->
-			
-			<div class="headerSticky ui-title" data-role="header" data-hide-during-focus="" data-tap-toggle="false" data-position="fixed" data-theme="a">
-				<div>
-					<p class="headerBarText"><img id="headerTitleIndex" class="headerIconTitle" src="./images/icons/ic_launcher_full_menu.png" /><img id="headerShareIndex" class="headerIconSecondRight" src="./images/icons/ic_action_share_header.png" /><img id="headerOverflowIndex" class="headerIconFirstRight" src="./images/icons/ic_action_overflow_header.png" />
-					&nbsp;</p>
-				</div><!-- populate the panel menu, also with the id Index in this case -->
-			</div><!-- /header -->
-			
-			<div role="main" class="ui-content" data-theme="a">
-				
-				<div class="ui-grid-a ui-responsive">
-					<div class="ui-block-a">
-				
-					<h1>Conteúdo</h1>
-					<p>Loja Droid Market.</p>				
-					<a id="clearFirstBoot" data-role="button">Atualizar a loja</a><br />
-					Sobre: <a href="https://github.com/Pedecabra2377/RevivalOS/" target="_blank">https://github.com/Pedecabra2377/RevivalOS/</a>
-					
-					</div>
-					<div class="ui-block-b">
-					
-					<h1>Sobre</h1>
-					<p>Visualizar <a href="https://github.com/teusink/jpHolo" target="_blank">Downloads</a></p>
-					<p>Bem-vindo(a) a loja!</p>
-					<p>- Visualizar <a href="http://phonegap.com/" target="_blank">Recente</a><br />
-					</p>
-					
-					<h1>Sugestões</h1>
-					<p>- Apps: <a href="https://github.com/Pedecabra2377/RevivalOS/" target="_blank">Download</a><br />
-					- Jogos: <a href="https://github.com/Pedecabra2377/RevivalOS/" target="_blank">Download</a><br />
-					</p>
-				
-					</div>
-				</div>
-				
-			</div><!-- /content -->
-			
-			<div data-role="footer" data-hide-during-focus="" data-tap-toggle="false" data-position="fixed" data-theme="b" class="actionbarTransparant">
-				<div>
-					<img id="footerShareIndex" src="./images/icons/ic_action_share_header.png" class="footerIconLeft">
-					<img id="footerToastIndex" src="./images/icons/ic_action_list_header.png" class="footerIconRight">
-				</div>
-			</div><!-- /footer -->
-		
-		</div><!-- /page -->
-		
-		<div id="otherPage" data-role="page" data-theme="a">
-			
-			<!-- left panel  -->
-			<div id="panelMenuOther" data-role="panel" data-theme="b" data-position="left" data-display="overlay" data-dismissible="true" data-position-fixed="true" data-swipe-close="true" data-animate="true" class="transparant">
-				<ul id="panelMenuOtherUL" data-role="listview"></ul>
-			</div>
-			<!-- /panel -->
-			
-			<!-- right panel  -->
-			<div id="panelMenuRightOther" data-role="panel" data-theme="b" data-position="right" data-display="overlay" data-dismissible="true" data-position-fixed="true" data-swipe-close="true" data-animate="true" class="transparant">
-				<ul id="panelMenuRightOtherUL" data-role="listview"></ul>
-			</div>
-			<!-- /panel -->
-			
-			<div class="headerSticky ui-title" data-role="header" data-hide-during-focus="" data-tap-toggle="false" data-position="fixed" data-theme="a">
-				<div>
-					<p class="headerBarText"><img id="headerTitleOther" class="headerIconTitle" src="./images/icons/ic_launcher_full_arrow.png" /><img id="headerShareOther" class="headerIconSecondRight" src="./images/icons/ic_action_share_header.png" /><img id="headerOverflowOther" class="headerIconFirstRight" src="./images/icons/ic_action_overflow_header.png" />
-					&nbsp;</p>
-				</div>
-			</div><!-- /header -->
-			
-			<div role="main" class="ui-content" data-theme="a">
-				
-				<div class="ui-grid-a ui-responsive">
-					<div class="ui-block-a">
-				
-					<h1>Informações</h1>
-					<p id="systemSpecs"></p>
-					
-					</div>
-					<div class="ui-block-b">
-					
-					<p id="otherPageContent"></p>
-				
-					</div>
-				</div>
-				
-			</div><!-- /content -->
-		
-		</div><!-- /page -->
-		
-		<div id="uriPage" data-role="page" data-theme="a">
-			
-			<!-- left panel  -->
-			<div id="panelMenuUriMessage" data-role="panel" data-theme="b" data-position="left" data-display="overlay" data-dismissible="true" data-position-fixed="true" data-swipe-close="true" data-animate="true" class="transparant">
-				<ul id="panelMenuUriMessageUL" data-role="listview"></ul>
-			</div>
-			<!-- /panel -->
-			
-			<!-- right panel  -->
-			<div id="panelMenuRightUriMessage" data-role="panel" data-theme="b" data-position="right" data-display="overlay" data-dismissible="true" data-position-fixed="true" data-swipe-close="true" data-animate="true" class="transparant">
-				<ul id="panelMenuRightUriMessageUL" data-role="listview"></ul>
-			</div>
-			<!-- /panel -->
-			
-			<div class="headerSticky ui-title" data-role="header" data-hide-during-focus="" data-tap-toggle="false" data-position="fixed" data-theme="a">
-				<div>
-					<p class="headerBarText"><img id="headerTitleUriMessage" class="headerIconTitle" src="./images/icons/ic_launcher_full_arrow.png" /><img id="headerShareUriMessage" class="headerIconSecondRight" src="./images/icons/ic_action_share_header.png" /><img id="headerOverflowUriMessage" class="headerIconFirstRight" src="./images/icons/ic_action_overflow_header.png" />
-					&nbsp;</p>
-				</div>
-			</div><!-- /header -->
-			
-			<div role="main" class="ui-content" data-theme="a">
-				
-				<div class="ui-grid-a ui-responsive">
-					<div class="ui-block-a">
-				
-					<h1>Endereço URL</h1>
-					<p>O endereço / link foi capturado pelo app.</p>
-					
-					</div>
-					<div class="ui-block-b">
-					
-					<p id="uriMessage"></p>
-				
-					</div>
-				</div>
-				
-			</div><!-- /content -->
-		
-		</div><!-- /page -->
-		
-		<div id="servicePage" data-role="page" data-theme="a">
-			
-			<!-- left panel  -->
-			<div id="panelMenuService" data-role="panel" data-theme="b" data-position="left" data-display="overlay" data-dismissible="true" data-position-fixed="true" data-swipe-close="true" data-animate="true" class="transparant">
-				<ul id="panelMenuServiceUL" data-role="listview"></ul>
-			</div>
-			<!-- /panel -->
-			
-			<!-- right panel  -->
-			<div id="panelMenuRightService" data-role="panel" data-theme="b" data-position="right" data-display="overlay" data-dismissible="true" data-position-fixed="true" data-swipe-close="true" data-animate="true" class="transparant">
-				<ul id="panelMenuRightServiceUL" data-role="listview"></ul>
-			</div>
-			<!-- /panel -->
-			
-			<div class="headerSticky ui-title" data-role="header" data-hide-during-focus="" data-tap-toggle="false" data-position="fixed" data-theme="a">
-				<div>
-					<p class="headerBarText"><img id="headerTitleService" class="headerIconTitle" src="./images/icons/ic_launcher_full_arrow.png" /><img id="headerShareService" class="headerIconSecondRight" src="./images/icons/ic_action_share_header.png" /><img id="headerOverflowService" class="headerIconFirstRight" src="./images/icons/ic_action_overflow_header.png" />
-					&nbsp;</p>
-				</div>
-			</div><!-- /header -->
-			
-			<div role="main" class="ui-content" data-theme="a">
-		
-				<table>
-				
-				<tr class="tdTitle">
-					<td colspan=2>Configurações de serviços</td>
-				</tr>
-				
-				<tr class="lineBreak">
-					<td class="center" colspan=2><p class="thinSettings">Serviço inteligente de informações, recomendação, e mais..</p></td>
-				</tr>
-				
-				<tr class="lineBreak">
-					<td class="left"><p class="bigSettings">Serviço ativado</p><p class="tinySettings">Ativa ou desativa o serviço.</p></td>
-					<td class="right">
-						<select name="flipServiceStatus" id="serviceStatus" data-role="flipswitch" data-corners="false" data-mini="true" data-theme="c">
-							<option value="on">ativado</option>
-							<option value="off">desativado</option>
-						</select>
-					</td>
-				</tr>
-				
-				<tr class="lineBreak">
-					<td class="left"><p class="bigSettings">Duração da mensagem</p><p class="tinySettings">Exibe a mensagem de aviso por um tempo maior ou menor.</p></td>
-					<td class="right">
-						<select name="flipServiceToastDuration" id="serviceToastDuration" data-role="flipswitch" data-corners="false" data-mini="true" data-theme="c">
-							<option value="short">curto</option>
-							<option value="long">longo</option>
-						</select>
-					</td>
-				</tr>
-				
-				<tr class="lineBreak">
-					<td class="left"><p class="bigSettings">Tempo de serviço</p><p class="tinySettings">Executa o serviço no intervalo.</p></td>
-					<td class="right">
-						<select name="flipServiceTimer" id="serviceTimer" data-role="flipswitch" data-corners="false" data-mini="true" data-theme="c">
-							<option value="on">ativado</option>
-							<option value="off">desativado</option>
-						</select>
-					</td>
-				</tr>
-				
-				<tr class="nonLineBreak">
-					<td colspan=2><p class="bigSettings">Intervalo para atualizar informações...</p><div id="timerDurationStatus" class="darkcyan"></div></td>
-				</tr>
-				
-				<tr class="lineBreak">
-					<td colspan=2>
-						<div data-role="controlgroup">
-							<input type="button" data-theme="c" data-shadow="false" id="toggleTimer1" data-mini="true" value="1 minuto" />
-							<input type="button" data-theme="c" data-shadow="false" id="toggleTimer2" data-mini="true" value="30 minutos" />
-							<input type="button" data-theme="c" data-shadow="false" id="toggleTimer3" data-mini="true" value="1 hora" />
-							<input type="button" data-theme="c" data-shadow="false" id="toggleTimer4" data-mini="true" value="6 horas" />
-							<input type="button" data-theme="c" data-shadow="false" id="toggleTimer5" data-mini="true" value="12 horas" />
-							<input type="button" data-theme="c" data-shadow="false" id="toggleTimer6" data-mini="true" value="1 dia" />
-						</div>
-					</td>
-				</tr>
-				
-				<tr class="nonLineBreak">
-					<td colspan=2><p class="bigSettings">Inicialização rápida</p><p class="tinySettings">Executa o serviço apenas uma vez.</p></td>
-					
-				</tr>
-				
-				<tr class="lineBreak">
-					<td colspan=2>
-						<div data-role="controlgroup" class="settingButtons">
-							<input type="button" id="serviceRunOnce" data-mini="true" value="NOW" />
-						</div>
-					</td>
-				</tr>
-				
-				<tr class="lineBreak">
-					<td class="left"><p class="bigSettings">Iniciar serviços na inicialização</p><p class="tinySettings">Reinicia os serviços na próxima inicialização.</p></td>
-					<td class="right">
-						<select name="flipServiceBootStatus" id="serviceBootStatus" data-role="flipswitch" data-corners="false" data-mini="true" data-theme="c">
-							<option value="on">ativado</option>
-							<option value="off">desativado</option>
-						</select>
-					</td>
-				</tr>
-				
-				</table>
-			
-			</div><!-- /content -->
-		
-		</div><!-- /page -->
-		
-		<div id="immersivePage" data-role="page" data-theme="b">
-			
-			<!-- left panel -->
-			<div id="panelMenuImmersive" data-role="panel" data-theme="b" data-position="left" data-display="overlay" data-dismissible="true" data-position-fixed="true" data-swipe-close="true" data-animate="true" class="transparant">
-				<ul id="panelMenuImmersiveUL" data-role="listview"></ul>
-			</div>
-			<!-- /panel -->
-			
-			<!-- right panel -->
-			<div id="panelMenuRightImmersive" data-role="panel" data-theme="b" data-position="right" data-display="overlay" data-dismissible="true" data-position-fixed="true" data-swipe-close="true" data-animate="true" class="transparant">
-				<ul id="panelMenuRightImmersiveUL" data-role="listview"></ul>
-			</div>
-			<!-- /panel -->
-			
-			<div data-role="header" data-hide-during-focus="" data-tap-toggle="false" data-position="fixed" data-theme="b" data-fullscreen="true" id="headerImmersive" class="headerSticky actionbarTransparant ui-title">
-				<div>
-					<p class="headerBarText"><img alt="header" id="headerTitleImmersive" class="headerIconTitle" src="./images/icons/ic_launcher_small_arrow.png" /><img alt="header" id="headerShareImmersive" class="headerIconSecondRight" src="./images/icons/ic_action_share_header.png" /><img alt="header" id="headerOverflowImmersive" class="headerIconFirstRight" src="./images/icons/ic_action_overflow_header.png" />
-					&nbsp;</p>
-				</div>
-			</div><!-- /header -->
-			
-			<div role="main" data-theme="b" id="immersivePhotoDiv" class="ui-content immersivePhotoPage">
-				<div id="photoDiv">
-					<img alt="Photo" id="photoImmersive" class="immersivePage" src="./images/chromecast.jpg" />
-				</div>
-				
-				<div id="photoInfoDiv">
-					<h5>
-						<span class="title">2048x1039</span><br />
-						<span class="title note">Foto de teste</span><br />
-						<span class="title">Teste de conteúdo imersivo</span>
-					</h5>
-				</div>
-			</div><!-- /content -->
-			
-			<div data-role="footer" data-hide-during-focus="" data-tap-toggle="false" data-position="fixed" data-theme="b" data-fullscreen="true" id="footerImmersive" class="actionbarTransparant">
-				<div>
-					<img id="footerShareImmersive" src="./images/icons/ic_action_share_header.png" class="footerIconLeft">
-					<img id="footerToastImmersive" src="./images/icons/ic_action_list_header.png" class="footerIconRight">
-				</div>
-			</div><!-- /footer -->
-			
-		</div><!-- /page -->
-		
-	</body>
-</html>
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>PlayStore</title>
+            <link rel="stylesheet" href="PlayStore.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Combo&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/41f3302455.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <section class="Background">
+                <div class="topbar">
+                    <div class="logo">
+                        <div class="imagelogo">
+                            <img src="https://www.freepnglogos.com/uploads/google-play-png-logo/google-play-arrow-png-logo-8.png" alt="">
+                        </div>
+                        <div class="logoname"><h1 style=" margin-top: 7%; color: white; margin-left: 7px; font-size: 20px;font-family: 'Combo', cursive;
+                        font-family: 'Ubuntu', sans-serif;color:rgb(109, 109, 109)">Google Play</h1></div>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="">Games</a></li>
+                            <li><a href="">Apps</a></li>
+                            <li><a href="">Movies & TV</a></li>
+                            <li><a href="">Books</a></li>
+                            <li><a href="">Kids</a></li>
+                        </ul>
+                    </div>
+                    <div class="help">
+                        <div class="iconssearch">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="iconssearch">
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div>
+                        <div class="iconssearch">
+                            <div class="emailframe"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="emptyspace"></div>
+                <div class="optionmenu">
+                    <form action="get">
+                    <ul>
+                        <li><button  style="background-color: rgba(77, 149, 77, 0.622);"><i class="fa-solid fa-mobile-screen-button"></i>  Phone</button></li>
+                        <li><button><i class="fa-solid fa-tablet-screen-button"></i> Tablet</button></li>
+                        <li><button><i class="fa-solid fa-tv"></i> TV</button></li>
+                        <li><button><i class="fa-solid fa-laptop"></i> Cromebook</button></li>
+                        <li><button><i class="fa-regular fa-clock"></i> Watch</button></li>
+                        <li><button><i class="fa-solid fa-car"></i> Car</button></li>
+                    </ul>
+                </div>
+                <div class="topchart"><p>Top Charts</p></div>
+                <div class="optmenu2">
+                    <li><button style="background-color: rgba(77, 149, 77, 0.622);"><a href=""> Top free</a></button></li>
+                    <li><button><a href=""> Top grossing</a></button></li>
+                    <li><button> <a href="">Top paid</a></button></li>
+                </form>
+                </div>
+                <div class="Appscontainer">
+                    <div class="container1">
+                        <div class="apps">
+                            <div class="num"><p>1</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Instagram</b></p>
+                                <p>Social media</p>
+                                <p>4.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                        <div class="apps">
+                            <div class="num"><p>4</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3698/3698647.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Vidio editor</b></p>
+                                <p>Editing</p>
+                                <p>3.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                        <div class="apps">
+                            <div class="num"><p>7</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Youtub</b></p>
+                                <p>Vidios</p>
+                                <p>3.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container1">
+                        <div class="apps">
+                            <div class="num"><p>2</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384065.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Twiter</b></p>
+                                <p>Social media</p>
+                                <p>4.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                        <div class="apps">
+                            <div class="num"><p>5</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384066.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Snapchat</b></p>
+                                <p>Social media</p>
+                                <p>3.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                        <div class="apps">
+                            <div class="num"><p>8</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384061.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Music</b></p>
+                                <p>Entertainment</p>
+                                <p>3.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container1">
+                        <div class="apps">
+                            <div class="num"><p>3</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2504/2504923.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Linkedin</b></p>
+                                <p>Professionals</p>
+                                <p>4.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                        <div class="apps">
+                            <div class="num"><p>6</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2504/2504911.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Github</b></p>
+                                <p>Code</p>
+                                <p>4.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                        <div class="apps">
+                            <div class="num"><p>9</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2504/2504929.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Netflix</b></p>
+                                <p>Entertainment</p>
+                                <p>4.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Appscontainer">
+                    <div class="container1">
+                        <div class="apps">
+                            <div class="num"><p>1</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Instagram</b></p>
+                                <p>Social media</p>
+                                <p>4.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                        <div class="apps">
+                            <div class="num"><p>4</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3698/3698647.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Vidio editor</b></p>
+                                <p>Editing</p>
+                                <p>3.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                        <div class="apps">
+                            <div class="num"><p>7</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Youtub</b></p>
+                                <p>Vidios</p>
+                                <p>3.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container1">
+                        <div class="apps">
+                            <div class="num"><p>2</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384065.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Twiter</b></p>
+                                <p>Social media</p>
+                                <p>4.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                        <div class="apps">
+                            <div class="num"><p>5</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384066.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Snapchat</b></p>
+                                <p>Social media</p>
+                                <p>3.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                        <div class="apps">
+                            <div class="num"><p>8</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384061.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Music</b></p>
+                                <p>Entertainment</p>
+                                <p>3.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container1">
+                        <div class="apps">
+                            <div class="num"><p>3</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2504/2504923.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Linkedin</b></p>
+                                <p>Professionals</p>
+                                <p>4.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                        <div class="apps">
+                            <div class="num"><p>6</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2504/2504911.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Github</b></p>
+                                <p>Code</p>
+                                <p>4.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                        <div class="apps">
+                            <div class="num"><p>9</p></div>
+                            <div class="appico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2504/2504929.png" alt="">
+                            </div>
+                            <div class="appinfo">
+                                <p><b>Netflix</b></p>
+                                <p>Entertainment</p>
+                                <p>4.0 <small>⭐</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </body>
+    </html>
