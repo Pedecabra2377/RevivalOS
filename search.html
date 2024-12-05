@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Market</title>
+    <style> 
+        @font-face {
+           font-family: myFirstFont;
+           src: url(font.ttf);
+        }
+        
+        * {
+           font-family: myFirstFont;
+        }
+    </style>
+    <style>
+        
+        body {
+    font-family: 'Arial', sans-serif;
+}
+        /* Stiluri pentru bara de cÄutare */
+        .search-bar {
+            background: linear-gradient(to bottom, #d2d2d2, #777b7e);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            margin: -10px;
+        }
+
+        .search-icon {
+            color: white;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .search-input[type="text"] {
+    background-color: white; /* Fundal alb */
+    border: none; /* FÄrÄ bordurÄ */
+    border-radius: 5px; /* ColÈuri rotunde de 5px */
+    padding: 10px; /* SpaÈiu interior pentru text */
+    width: 100%; /* LÄÈimea text box-ului */
+}
+
+        /* Stiluri pentru rezultatele cÄutÄrii */
+        .search-results {
+            margin-top: 0px;
+        }
+
+        .search-results {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search-results {
+    list-style: none;
+    margin: -4px;
+    padding: 0;
+}
+
+.search-result {
+    display: flex;
+    flex-direction: column; /* SchimbÄm direcÈia de afiÈare a elementelor */
+    align-items: flex-start; /* Aliniere la stÃ¢nga */
+    background-color: white; /* Fundal alb */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.45); /* UmbrÄ de 0.45 */
+    margin: 0px 0;
+    padding: 20px;
+}
+
+.app-container {
+            background-color: #ffffff; /* Fundal alb pentru secÈiunea cu aplicaÈia */
+            margin-top: 0px; /* SpaÈiu sus, sub antet Èi meniu */
+            margin-bottom: 50px; /* SpaÈiu jos */
+            padding: 20px; /* Spatiu interior pentru secÈiunea cu aplicaÈia */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.45); /* UmbrÄ sub secÈiunea cu aplicaÈia */
+            max-width: 100%; /* LimitÄm lÄÈimea secÈiunii */
+            margin-bottom: 0;
+        }
+
+        .app {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+        }
+
+        .app img {
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+        .app-details {
+            margin-left: 15px;
+            flex-grow: 1; /* OcupÄ spaÈiul disponibil */
+        }
+
+        .app-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .app-description {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .app-price {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: right; /* Aliniere la dreapta */
+        }
+.app img {
+            max-width: 50px;
+            max-height: 50px;
+        }
+</style>
+</head>
+<body>
+    <!-- Bara de cÄutare -->
+    <div class="search-bar">
+        <img src="searchl.png" height='50px'; width='50px' alt="search">
+        <input class="search-input" type="text" placeholder="Search Android Market">
+    </div>
+
+    <!-- Rezultatele cÄutÄrii -->
+    <ul class="search-results">
+        <ul class="search-results">
+            <div class="app-container" onclick="location.href='link/asscheeks.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="icons/adrod.webp" alt="Asscheeks">
+                    <div class="app-details">
+                        <div class="app-name">Asscheeks</div>
+                        <div class="app-description">androd.neocities.org</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/larry.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="icons/larry.jpg" alt="geometrydash">
+                    <div class="app-details">
+                        <div class="app-name">Talking Larry</div>
+                        <div class="app-description">Outfit7</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='link/twitter.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/twitter.png" alt="youtube">
+                    <div class="app-details">
+                        <div class="app-name">Twitter</div>
+                        <div class="app-description">Twitter, Inc.</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/tom.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="icons/yappingTom.jpg" alt="geometrydash">
+                    <div class="app-details">
+                        <div class="app-name">Talking Tom</div>
+                        <div class="app-description">Outfit7</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/ctr.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="icons/ctr.png" alt="geometrydash">
+                    <div class="app-details">
+                        <div class="app-name">Cut the Rope</div>
+                        <div class="app-description">ZeptoLab</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='link/fae.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/fakeanexcuse.jpg" alt="youtube">
+                    <div class="app-details">
+                        <div class="app-name">Fake an Excuse</div>
+                        <div class="app-description">Excelltech</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/wmw.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="icons/wheremywater.png" alt="geometrydash">
+                    <div class="app-details">
+                        <div class="app-name">Where's My Water? Free!</div>
+                        <div class="app-description">Disney</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/ab.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="icons/angrybird.png" alt="Minecraft">
+                    <div class="app-details">
+                        <div class="app-name">Angry Birds</div>
+                        <div class="app-description">Rovio Mobile Ltd.</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div> 
+            <div class="app-container" onclick="location.href='/link/fb.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/facebook.png" alt="no">
+                    <div class="app-details">
+                        <div class="app-name">Facebook</div>
+                        <div class="app-description">Meta</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/fbird.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/flappybird.png" alt="no">
+                    <div class="app-details">
+                        <div class="app-name">Flappy Bird</div>
+                        <div class="app-description">GEARS Studios</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/googlemaps.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/gmaps.png" alt="Maps">
+                    <div class="app-details">
+                        <div class="app-name">Google Maps</div>
+                        <div class="app-description">Google LLC</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/dj.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/dj.png" alt="Doodle Jump">
+                    <div class="app-details">
+                        <div class="app-name">Doodle Jump</div>
+                        <div class="app-description">Lima Sky LLC</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/csp.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/csp.png" alt="goggle">
+                    <div class="app-details">
+                        <div class="app-name">Critical Strike Portable</div>
+                        <div class="app-description">Studio OnMars</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/zarchiver.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/zarchiver.png" alt="zarchiver">
+                    <div class="app-details">
+                        <div class="app-name">ZArchiver</div>
+                        <div class="app-description">ZDevs</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/parachutep.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/parpan.png" alt="goggle">
+                    <div class="app-details">
+                        <div class="app-name">Parachute Panic</div>
+                        <div class="app-description">FDG Entertainment</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/earntodie.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/etdicon.png" alt="earntodie">
+                    <div class="app-details">
+                        <div class="app-name">Earn to Die</div>
+                        <div class="app-description">Not Doppler</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/minecraft.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/mcicon.png" alt="minecraft">
+                    <div class="app-details">
+                        <div class="app-name">Minecraft</div>
+                        <div class="app-description">Mojang</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/rtl.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/rtl.png" alt="goggle">
+                    <div class="app-details">
+                        <div class="app-name">Raging Thunder Lite</div>
+                        <div class="app-description">Polarbit</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/explorationlitecraft.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/expli.png" alt="goggle">
+                    <div class="app-details">
+                        <div class="app-name">Exploration Lite Craft</div>
+                        <div class="app-description">CanaryDroid</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/hillclimbracing.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/hillclimb.jpg" alt="minecraft">
+                    <div class="app-details">
+                        <div class="app-name">Hill Climb Racing</div>
+                        <div class="app-description">Fingersoft</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/youtube.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/yt.png" alt="youtube">
+                    <div class="app-details">
+                        <div class="app-name">YouTube</div>
+                        <div class="app-description">Google LLC</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/newpipetoss.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/pipeic.png" alt="goggle">
+                    <div class="app-details">
+                        <div class="app-name">NewPipe Toss</div>
+                        <div class="app-description">ShareASmile</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/googlenews.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/gnews.png" alt="goggle">
+                    <div class="app-details">
+                        <div class="app-name">Google Newsstand</div>
+                        <div class="app-description">Google LLC</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/geometrydash.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/gd.png" alt="FIRE IN THE HOLE">
+                    <div class="app-details">
+                        <div class="app-name">Geometry Dash</div>
+                        <div class="app-description">Robtop</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            <div class="app-container" onclick="location.href='/link/crazypenguin.html'"> <!-- SecÈiunea cu aplicaÈia Èi fundal alb -->
+                <div class="app">
+                    <img src="/icons/cpc.jpg" alt="cpc">
+                    <div class="app-details">
+                        <div class="app-name">Crazy Penguin Catapult</div>
+                        <div class="app-description">Rockyou Inc.</div>
+                    </div>
+                    <div class="app-price">FREE</div>
+                </div>
+            </div>
+            
+    <script>
+        // ObÈine toate elementele cu clasa .app-container
+        const appContainers = document.querySelectorAll('.app-container');
+
+        // AdaugÄ un eveniment de clic pe fiecare element .app-container
+        appContainers.forEach(container => {
+            container.addEventListener('click', () => {
+                // ObÈine link-ul din atributul data-link
+                const link = container.getAttribute('data-link');
+                
+                // Deschide link-ul Ã®ntr-o fereastrÄ nouÄ
+                window.open(link, '_blank');
+            });
+        });
+    </script>
+    
+    <!-- AdaugÄ acest cod JavaScript la sfÃ¢rÈitul fiÈierului HTML -->
+<script>
+    // ObÈine elementele necesare din DOM
+    const searchInput = document.querySelector('.search-input');
+    const appcontainers = document.querySelectorAll('.app-container');
+
+    // AdaugÄ un eveniment pentru cÄutare Ã®n timp real
+    searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        // Parcurge toate elementele .app-container Èi verificÄ dacÄ conÈin termenul cÄutat
+        appContainers.forEach(container => {
+            const appDetails = container.querySelector('.app-details');
+            const appName = appDetails.querySelector('.app-name').textContent.toLowerCase();
+            const appDescription = appDetails.querySelector('.app-description').textContent.toLowerCase();
+
+            // DacÄ numele sau descrierea conÈin termenul cÄutat, afiÈeazÄ elementul, altfel ascunde-l
+            if (appName.includes(searchTerm) || appDescription.includes(searchTerm)) {
+                container.style.display = 'block';
+            } else {
+                container.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
