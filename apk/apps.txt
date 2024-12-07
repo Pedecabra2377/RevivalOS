@@ -1,21 +1,13 @@
 # Example entry in games.txt or apps.txt
 
-icon=/icon2.png
+icon=/thumbnails/yt.png
 banner=
-screenshot=/icon2.png
-screenshot2=/icon2.png
-apk=/apk/apk.apk
-name=TESTE!!!
-developer=Revival Team
-description=O servidor está em manutenção, este app será removido da loja após a manutenção.
+screenshot=/thumbnails/yt2.png
+screenshot2=/thumbnails/yt2.png
+apk=/apk/YouTube.apk
+name=YouTube
+developer=Google LLC
+description=Assista conteúdos, filmes, TV, tudo isso no app do YouTube.
 ---
-icon=/icon2.png
-banner=
-screenshot=/icon2.png
-screenshot2=/icon2.png
-apk=/apk/apk.apk
-name=TESTE!!!
-developer=Revival Team
-description=O servidor está em manutenção, este app será removido da loja após a manutenção.
----
+
 
