@@ -1,10 +1,10 @@
 # Example entry in games.txt or apps.txt
 
-icon=/thumbnails/yt.png
-banner=
-screenshot=/thumbnails/yt2.png
-screenshot2=/thumbnails/yt2.png
-apk=/apk/YouTube.apk
+icon=thumbnails/yt.png
+banner=thumbnails/yt2.png
+screenshot=thumbnails/yt2.png
+screenshot2=thumbnails/yt2.png
+apk=apk/YouTube.apk
 name=YouTube
 developer=Google LLC
 description=Assista conteúdos, filmes, TV, tudo isso no app do YouTube.
