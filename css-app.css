@@ -1,0 +1,322 @@
+    /* Style the magnifying glass button */
+    #searchButton {
+   background-color: transparent;
+      margin-top: 4px;
+  font-size: 24px;
+  float: right;
+  color: white;
+  border: none;
+  
+    }
+
+    /* Initially hide the search div */
+    #searchDiv {
+      display: none;
+      margin-top: 10px;
+    }
+
+/* Loading screen styles */
+#loading-screen {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+/* Hide main content until loading completes */
+#content 
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.loadingimg { }
+
+/* Full page overlay */
+#fullpage {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: black;
+}
+
+.app-item-lol {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.app-info-lol {
+  margin-left: 10px;
+}
+
+.app-name-lol {
+  font-size: 16px;
+  font-weight: bold;
+  color: #888888;
+}
+
+.app-company-lol {
+  color: #888888;
+  font-size: 12px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.float-container {
+  display: flex;
+}
+
+.float-child {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 50%;
+}
+
+#testcontainer {
+  overflow: auto;
+}
+
+#testleft {
+  float: left;
+  width: 50%;
+}
+
+#testright {
+  margin-left: 50%;
+}
+
+.container-home-bannerbutton {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.float-child iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 420px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+body {
+  margin: 0px;
+  background: #CCCCCC;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+#screen {
+  width: 100%;
+  height: 100%;
+  background: url("../images/aa5f96f0-ab0a-4469-9d50-d0c05e4589d5-DMQoP93.png");
+}
+
+#topbar {
+  width: 100%;
+  height: 50px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAcSURBVBhXY6ivr2eAAWQ2SIxactQyB+5QTLcBAE6PF9GtwQmMAAAAAElFTkSuQmCC);
+}
+
+#icon {
+  width: 45px;
+  height: 45px;
+  margin: 4px 5px 5px 5px;
+  float: left;
+}
+
+#search {
+  margin-top: 4px;
+  float: right;
+}
+
+#share {
+  float: right;
+  margin-top: 4px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#title {
+  font-size: 16px;
+  padding-top: 15px;
+  float: left;
+}
+
+/* Title bar containing app icon, title, developer, and install button */
+#titlebar {
+  background-color: #3d3d3d;
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+/* Adjust icon position */
+#appIcon {
+  width: 65px;
+  
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+#appIcondesk {
+  width: 95%;
+  
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+
+/* Container for app info text */
+#appInfos {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+/* Title and developer name styling */
+#appTitle {
+  font-weight: bold;
+  font-size: 12.5px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+#appCreator {
+  color: #AAAAAA;
+  margin-top: 5px;
+}
+
+/* Install button style */
+#installButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid white;
+  padding: 8px 20px;
+  background-color: #296ccf;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 95px;
+  height: 29px;
+}
+
+/* Install button style */
+#installButtondesk {
+  border: 1px solid white;
+  padding: 8px 20px;
+  background-color: #296ccf;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 95px;
+  height: 29px;
+}
+}
+
+/* Separator line below title bar */
+#separator {
+  width: 100%;
+  height: 4px;
+  background-color: #99cc00;
+}
+
+/* Screenshot area styling */
+#screenshotArea {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+#ss1, #ss2, #ss3 {
+  height: 170px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+#topDeveloper {
+  position: absolute;
+  margin-left: 80px;
+  margin-top: -15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#ratings {
+  color: #000000;
+}
+
+p {
+  color: black;
+  text-decoration: none;
+}
+
+/* Minor responsive adjustments */
+@media screen and (max-width: 480px) {
+  #installButton {
+    font-size: 12px;
+    padding: 6px 12px;
+    right: 5px;
+  }
+  #appInfos {
+    margin-right: 100px;
+  }
+}
