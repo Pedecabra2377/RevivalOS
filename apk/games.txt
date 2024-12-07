@@ -1,0 +1,21 @@
+# Example entry in games.txt or apps.txt
+
+icon=/icon2.png
+banner=
+screenshot=/icon2.png
+screenshot2=/icon2.png
+apk=/apk/apk.apk
+name=TESTE!!!
+developer=Revival Team
+description=O servidor está em manutenção, este app será removido da loja após a manutenção.
+---
+icon=/icon2.png
+banner=
+screenshot=/icon2.png
+screenshot2=/icon2.png
+apk=/apk/apk.apk
+name=TESTE!!!
+developer=Revival Team
+description=O servidor está em manutenção, este app será removido da loja após a manutenção.
+---
+
