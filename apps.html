@@ -23,7 +23,7 @@
 
     function loadData() {
       var xhr = new XMLHttpRequest();
-      xhr.open('GET', '/data/apps.txt', true);
+      xhr.open('GET', '/apk/apps.txt', true);
       xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
           var data = xhr.responseText;
@@ -99,7 +99,7 @@
     <table align="center">
       <tr>
         <td>
-          <input type="text" style="width: 280px; height: 40px;" id="Search" onkeyup="myFunction()" placeholder="Pesquise Apps" title="Pesquisa">
+          <input type="text" style="width: 280px; height: 40px;" id="Pesquisa" onkeyup="myFunction()" placeholder="Pesquise Apps" title="Pesquisa">
         </td>
       </tr>
     </table>
