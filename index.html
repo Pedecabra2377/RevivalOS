@@ -1,402 +1,163 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html Savelang="en">
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Droid Market</title>
-    <style> 
-
-        @font-face {
-
-           font-family: myFirstFont;
-
-           src: url(font.ttf);
-
-        }
-
-        
-
-        * {
-
-           font-family: myFirstFont;
-
-        }
-
-    </style>
-
-    <style>
-
-        /* Reset default margin and padding for all elements */
-
-        	    .spacer {
-
-    height: 132px;
-
-}
-
-		* {
-
-            margin: 0;
-
-            padding: 0;
-
-            box-sizing: border-box;
-
-        }
-
-
-
-        /* Basic styles for the body */
-
-        body {
-
-            font-family: Arial, sans-serif;
-
-            background-color: #f5f5f5;
-
-            margin: 0;
-
-        }
-
-
-
-        /* Header styles */
-
-        header {
-
-            background: linear-gradient(to bottom, #d3d3d3, #818589);
-
-            color: white;
-
-            padding: 10px;
-
-            text-align: center;
-
-            display: flex;
-
-            justify-content: space-between;
-
-            align-items: center;
-
-            position: fixed; /* Fixăm antetul în partea de sus */
-
-            width: 100%; /* Lățime de 100% */
-
-            z-index: 1; /* Peste conținut */
-
-        }
-
-
-
-        #logo {
-
-            font-size: 0; /* Ascundem textul pentru "Android Market" */
-
-        }
-
-
-
-        #logo img {
-
-            max-width: 235px; /* Aici putem ajusta dimensiunea imaginii */
-
-        }
-
-
-
-        #search-bar {
-
-            display: flex;
-
-            align-items: center;
-
-        }
-
-
-
-        #search-button {
-
-            background: url('buttonss.png') no-repeat center center; /* Folosim o imagine pentru buton */
-
-            background-size: 38px; /* Aici redimensionăm imaginea la 30 de pixeli */
-
-            width: 38px; /* Aici facem butonul mai mic */
-
-            height: 38px; /* Aici facem butonul mai mic */
-
-            border: none;
-
-            border-radius: 5px; /* Adăugăm colțuri rotunde */
-
-            background-color: #e7e7e7; /* Adăugăm background color personalizat */
-
-            cursor: pointer;
-
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Adăugăm o umbră ușoară */
-
-        }
-
-
-
-        /* Navigation menu styles */
-
-        nav {
-
-            background: linear-gradient(to bottom, #f5f5f5, #E5E4E2);
-
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
-
-            padding: 0px;
-
-            position: fixed; /* Fixăm meniul în partea de sus */
-
-            width: 100%; /* Lățime de 100% */
-
-            z-index: 1; /* Peste conținut */
-
-            top: 85px; /* Spațiu pentru logo și antet fixate */
-
-        }
-
-
-
-        nav ul {
-
-            list-style: none;
-
-            display: flex;
-
-            justify-content: space-between; /* Spațiu egal între butoane */
-
-            padding: 0; /* Eliminăm padding-ul pentru lista ul */
-
-            width: 100%; /* Asigurăm că meniul ocupă tot spațiul disponibil */
-
-        }
-
-
-
-        nav li {
-
-            margin: 0; /* Eliminăm marginul pe butoane */
-
-            flex-grow: 1; /* Faceți butoanele să ocupe spațiul disponibil */
-
-            text-align: center; /* Aliniere text la centru */
-
-        }
-
-
-
-        nav a {
-
-            text-decoration: none;
-
-            color: #333;
-
-            font-weight: bold;
-
-            background: linear-gradient(to bottom, #ececec, #d3d3d3); /* Gradient alb spre gri pentru buton */
-
-            border: 1px solid #ccc; /* Bordură gri pentru buton */
-
-            cursor: pointer;
-
-            transition: background-color 0.3s, border 0.3s, color 0.3s; /* Adăugăm animații pentru hover */
-
-            display: flex;
-
-            justify-content: center;
-
-            align-items: center;
-
-            border-radius: 0px; /* Adăugăm colțuri rotunde */
-
-            min-width: 0; /* Permiteți butoanelor să se restrângă la conținut */
-
-            padding: 10px 20px; /* Adăugăm spațiu în jurul textului pentru a mări butonul */
-
-            width: 100%;
-
-            height: 45px;
-
-        }
-
-
-
-        nav a:hover {
-
-            background: linear-gradient(to bottom, #d3d3d3, #ececec); /* Schimbăm gradientul la hover */
-
-            border: 1px solid #bbb; /* Bordură mai închisă la hover */
-
-            color: #444; /* Culoare text mai închisă la hover */
-
-        }
-
-
-
-        /* App section styles */
-
-        .app-container {
-
-            background-color: #ffffff; /* Fundal alb pentru secțiunea cu aplicația */
-
-            margin-top: 0px; /* Spațiu sus, sub antet și meniu */
-
-            margin-bottom: 50px; /* Spațiu jos */
-
-            padding: 20px; /* Spatiu interior pentru secțiunea cu aplicația */
-
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.45); /* Umbră sub secțiunea cu aplicația */
-
-            max-width: 100%; /* Limităm lățimea secțiunii */
-
-            margin-bottom: 0;
-
-        }
-
-
-
-        .app {
-
-            display: flex;
-
-            align-items: center;
-
-            margin-bottom: 0;
-
-        }
-
-
-
-        .app img {
-
-            max-width: 50px;
-
-            max-height: 50px;
-
-        }
-
-
-
-        .app-details {
-
-            margin-left: 15px;
-
-            flex-grow: 1; /* Ocupă spațiul disponibil */
-
-        }
-
-
-
-        .app-name {
-
-            font-size: 18px;
-
-            font-weight: bold;
-
-        }
-
-
-
-        .app-description {
-
-            font-size: 14px;
-
-            color: #666;
-
-        }
-
-
-
-        .app-price {
-
-            font-size: 16px;
-
-            font-weight: bold;
-
-            margin-top: 10px;
-
-            text-align: right; /* Aliniere la dreapta */
-
-        }
-
-
-
-	</style>
-
-</head>
-
-<body>
-
-    <header>
-
-        <div id="logo">
-
-            <img src="logo.png" alt="Droid Market">
-
-        </div>
-
-        <div id="search-bar">
-
-            <a href='https://pedecabra2377.github.io/RevivalOS/search.html' id='search-button'></a> <!-- Butonul de căutare ca imagine -->
-
-        </div>
-
-    </header>
-
-    <nav>
-
-        <ul>
-
-            <li><a href='https://pedecabra2377.github.io/RevivalOS/index.html'>Apps</a></li>
-
-            <li><a href='https://pedecabra2377.github.io/RevivalOS/games.html'>Jogos</a></li>
-
-            <li><a href='https://pedecabra2377.github.io/RevivalOS/downloads.html'>Downloads</a></li>
-
-        </ul>
-
-    </nav>
-
-    <div class="spacer"></div>
-
-    <div class="app-container" onclick="location.href='https://pedecabra2377.github.io/RevivalOS/app1.html'"> <!-- Secțiunea cu aplicația și fundal alb -->
-
-        <div class="app">
-
-            <img src="cam.png" alt="erro!">
-
-            <div class="app-details">
-
-                <div class="app-name">Câmera</div>
-
-                <div class="app-description">Revival Team, Inc.</div>
-
-            </div>
-
-            <div class="app-price">GRATUITO</div>
-
-        </div>
-        <div class="app" onclick="window.location.href='https://pedecabra2377.github.io/RevivalOS/app2.html';">
-            <img src="yt.png" alt="Erro!">
-            <div class="app-details">
-                <div class="app-name">YouTube</div>
-                <div class="app-description">Google LLC</div>
-            </div>
-            <div class="app-price">GRATUITO</div>
-        </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta charset="UTF-8" />
+    <title>Market Reborn</title>
+ <link rel="stylesheet" href="/assets/css/home.css">
+       <style>
+ 
+
+ 
+      
+
+             .apps {
+          
     
 
-    </div>
+                      border-left: solid 15px;
+   background-image: url('/assets/androidappsicon.png'); /* Set the image as background */
+        background-size: 60px 60px;      /* Image size */
+        background-repeat: no-repeat;    /* Prevent image repetition */
+        background-position: 10px center; /* Position image on the left */
+      
+  padding: 12px 18px;
+    top: 0px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+                  height: 63px;
+               width: 100%;
+  background-color: #999999;
+  border-left-color: #98A752;
+}
+      .games {
+           border-left: solid 15px;
+              background-image: url('/assets/soonicon.png'); /* Set the image as background */
+        background-size: 60px 60px;      /* Image size */
+        background-repeat: no-repeat;    /* Prevent image repetition */
+        background-position: 10px center; /* Position image on the left */
+                  border-left: solid 15px;
+   height: 63px;
+              width: 100%;
+  padding: 12px 18px;
+    top: 0px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #999999;
+        border-left-style: solid;
+  border-left-color: #CF8143;
+}
+       .req {
+                   border-left: solid 15px;
+              background-image: url('/assets/requesticon.png'); /* Set the image as background */
+        background-size: 60px 60px;      /* Image size */
+        background-repeat: no-repeat;    /* Prevent image repetition */
+        background-position: 10px center; /* Position image on the left */
+   height: 63px;
+             width: 100%;
+  padding: 12px 18px;
+    top: 0px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #999999;
+        border-left-style: solid;
+  border-left-color: #4C91BF;
+}
+       .wall {
+           
+                 border-left: solid 15px;
+   height: 63px;
+              width: 100%;
+  padding: 12px 18px;
+    top: 0px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #999999;
+        border-left-style: solid;
+  border-left-color: #5964A5;
+}
+       .about {
+              background-image: url('/assets/infoicon.png'); /* Set the image as background */
+        background-size: 60px 60px;      /* Image size */
+        background-repeat: no-repeat;    /* Prevent image repetition */
+        background-position: 10px center; /* Position image on the left */
+                  border-left: solid 15px;
+     height: 63px;
+               width: 100%;
+  padding: 12px 18px;
+    top: 0px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #999999;
+        border-left-style: solid;
+  border-left-color: #A8514F;
+}
+   
+    </style>
+  </head>
+  <body>
+    
+    
+    
+     
 
-</body>
+  <div class="center">
+    <center>
 
-</html>
+</div>
+ 
+    
+
+<div id="screen">
+  <div id="topbar">       
+ <img id="icon" src="/favicon.png"></img>
+    <div id="title">Market Reborn</div>   
+  </div><div style=" background-image: url('/assets/mr-banner-public-beta.png');  background-size: 100%;">
+  <img src="/assets/snow.gif" alt="banner1" width="100%">
+   </div>
+
+<div id="testcontainer">
+  <div id="testleft">
+    <input type="button" class="apps custom-button" onclick="location.href='/apps.html';" value="Apps" />
+        <br>
+    <input type="button" class="games custom-button" onclick="location.href='/';" value="Coming Soon" />
+        <br>
+    <input type="button"  class="req custom-button" onclick="location.href='/req.html';" value="Request" />
+        <br>
+    <input type="button" class="about custom-button" onclick="location.href='/about.html';" value="About" />
+</div><div id="testright">
+  <div class="container-home-bannerbutton">
+  
+     <a href="/games.html"><img src="//cdn.glitch.global/aa5f96f0-ab0a-4469-9d50-d0c05e4589d5/games%20icon.png?v=1724217806739" alt="banner2" height="80" width="100%">
+ <div class="top-left">Games</a></div> <br>
+           <a href="/game_detail.html?id=4">  <div style="background-color: #000000;" class="container-home-bannerbutton"><div>
+<img src="/assets/angrybirds-banner.jpg" alt="banner2" height="80" width="100%">
+ <br>
+           <a href="/game_detail.html?id=1">  <div style="background-color: #000000;" class="container-home-bannerbutton"><div>
+<img src="/assets/fruitninjabanner.jpg" alt="banner2" height="80" width="100%">
+               <div class="top-left"></div></div>
+       </div></div></a></div>
+           
+           
+         </div>
+           
+           
+             
+             </div></div>
+              <a href="/game_detail.html?id=5"><img src="/assets/ctrbanner.jpg" alt="banner1" width="100%"></a>
+          
+
+           
+                 
+    </div></div></body>
+
+
+   
+
+
 
