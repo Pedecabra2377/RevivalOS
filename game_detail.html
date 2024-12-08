@@ -1,1 +1,103 @@
-a
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <title>Droid Market</title>
+  <link rel="stylesheet" href="css-app.css">
+</head>
+<body>
+  <div id="screen">
+    <div id="topbar">
+      <a href="apps.html">
+        <img id="icon" src="https://raw.githubusercontent.com/Pedecabra2377/RevivalOS/refs/heads/main/logo2.png" alt="icon">
+        <div id="title">Droid Market</div>
+      </a>
+    </div>
+
+    <div id="titlebar">
+      <img id="appIcon" src="" alt="ERRO!">
+      <div id="appInfos">
+        <div id="appTitle">Título do app</div>
+        <div id="appCreator">Nome do desenvolvedor</div>
+      </div>
+      <div id="installButton">
+        <a href="#" download>Instalar</a>
+      </div>
+    </div>
+
+    <div id="separator"></div>
+
+    <div id="screenshotArea">
+      <img id="ss1" src="" alt="">
+      <img id="ss2" src="" alt="">
+    </div>
+
+    <div id="miscInfos">
+      <div style="background-color: white;" id="ratings">
+        <p id="description">Descrição do app</p>
+      </div>
+    </div>
+  </div>
+
+  <br><hr><hr>
+
+  <script>
+    // Fallback function for broken images
+    function setDefaultImage(id, defaultSrc) {
+      var img = document.getElementById(id);
+      img.onerror = function() {
+        img.src = defaultSrc;
+      };
+    }
+
+    // Load app details from text file
+    function loadGameDetails() {
+      var params = window.location.search.substring(1).split('&');
+      var gameId = null;
+      for (var i = 0; i < params.length; i++) {
+        var pair = params[i].split('=');
+        if (pair[0] === 'id') {
+          gameId = pair[1];
+          break;
+        }
+      }
+      if (!gameId) return;
+
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'apk/games.txt', true);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var entries = xhr.responseText.split('---');
+          if (entries[gameId]) {
+            var lines = entries[gameId].split('\n');
+            var info = {};
+            for (var j = 0; j < lines.length; j++) {
+              var parts = lines[j].split('=');
+              if (parts[0] && parts[1]) info[parts[0].trim()] = parts[1].trim();
+            }
+
+            document.getElementById('appIcon').src = info.icon || 'assets/img/default-icon.png';
+            document.getElementById('appTitle').innerText = info.name || 'Unknown';
+            document.getElementById('appCreator').innerText = info.developer || 'Unknown';
+            document.getElementById('installButton').firstElementChild.href = info.apk || '#';
+            document.getElementById('description').innerText = info.description || 'No description available';
+            document.getElementById('ss1').src = info.screenshot || 'assets/img/default-screenshot.png';
+            document.getElementById('ss2').src = info.screenshot2 || 'assets/img/default-screenshot.png';
+          }
+        }
+      };
+      xhr.send();
+    }
+
+    // Set fallbacks and load data
+    setDefaultImage('appIcon', 'assets/img/default-icon.png');
+    setDefaultImage('ss1', 'assets/img/default-screenshot.png');
+    setDefaultImage('ss2', 'assets/img/default-screenshot.png');
+    loadGameDetails();
+  </script>
+</body>
+</html>
