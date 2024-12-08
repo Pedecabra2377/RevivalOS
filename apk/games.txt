@@ -30,4 +30,16 @@ name=Angry Birds
 developer=Rovio Entertainment Ltd.
 description=Angry Birds é um jogo de quebra-cabeças que conquistou o mundo com sua jogabilidade simples, mas viciante. O jogo foi lançado originalmente em 2009 e rapidamente se tornou um sucesso mundial, com milhões de downloads em todo o mundo.
 ---
+icon=https://cdn6.aptoide.com/imgs/4/5/d/45deee19c1f47adabf54825e50640c16_icon.png?w=128
+banner=https://cdn6.aptoide.com/imgs/9/c/5/9c52c67d3260d397725fc8334547a865_screen.png?w=103
+screenshot=https://cdn6.aptoide.com/imgs/9/c/5/9c52c67d3260d397725fc8334547a865_screen.png?w=103
+screenshot2=https://cdn6.aptoide.com/imgs/4/c/5/4c5d9a22da6c1097b0715beba4896827_screen.png?w=103
+apk=https://archive.org/download/cut-the-rope-apk-1.1.1/com.zeptolab.ctr.paid_1.1.1_paid-www.apkhere.com.apk
+name=Cut the Rope
+developer=Zeptolab
+description=Corte a corda para alimentar Om Nom com doces! 600 milhões de downloads em todo o mundo deste fenomenal jogo de quebra-cabeça. 425 níveis de diversão doce!
 
+
+
+Um pacote misterioso chegou, e o monstrinho dentro dele tem apenas um pedido... DOCES! Colete estrelas douradas, descubra prêmios escondidos e desbloqueie novos níveis emocionantes neste jogo viciante, divertido e premiado baseado em física!
+---
