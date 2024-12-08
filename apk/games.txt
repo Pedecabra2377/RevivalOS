@@ -21,5 +21,25 @@ Ao jogar, você pode melhorar o desempenho do seu veículo com o dinheiro que ga
 O rei das corridas de escalada
 Baixe o APK de Hill Climb Racing e curta um dos clássicos do gênero no Android. O jogo tem controles simples e uma mecânica altamente viciante. Graças ao grande número de veículos e cenários que podem ser desbloqueados, você pode jogar por várias horas.
 ---
+icon=https://image.winudf.com/v2/image1/Y29tLnJvdmlvLmFuZ3J5YmlyZHNfaWNvbl8xNTU0OTk0ODg3XzA4NA/icon.webp?w=280&fakeurl=1&type=.webp
+banner=
+screenshot=https://image.winudf.com/v2/image1/Y29tLnJvdmlvLmFuZ3J5YmlyZHNfc2NyZWVuX3B0LUJSXzBfMTU1NTU2MDA3Ml8wNzU/screen-0.webp?h=300&fakeurl=1&type=.webp
+screenshot2=https://image.winudf.com/v2/image1/Y29tLnJvdmlvLmFuZ3J5YmlyZHNfc2NyZWVuX3B0LUJSXzFfMTU1NTU2MDA3Ml8wMDY/screen-1.webp?h=300&fakeurl=1&type=.webp
+apk=https://archive.org/download/angry-birds-1-last-rel/Angry_Birds_8.0.3%5B1%5D.apk
+name=Angry Birds
+developer=Rovio Entertainment Ltd.
+description=Use pássaros para destruir estruturas e derrotar porcos verdes.
 
+Angry Birds é um jogo de quebra-cabeças que conquistou o mundo com sua jogabilidade simples, mas viciante. O jogo foi lançado originalmente em 2009 e rapidamente se tornou um sucesso mundial, com milhões de downloads em todo o mundo.
+
+O objetivo do jogo é simples: usar um estilingue para lançar pássaros em estruturas para derrubar porcos verdes que roubaram seus ovos. Cada pássaro tem habilidades diferentes, como velocidade, força e habilidade de explodir. Os jogadores devem usar as habilidades dos pássaros e a física do jogo para derrubar as estruturas e derrotar os porcos.
+
+O jogo tem vários níveis desafiadores que aumentam em dificuldade à medida que o jogador progride. À medida que o jogador avança, novos tipos de pássaros e porcos são introduzidos, tornando o jogo ainda mais desafiador e emocionante. O jogo também possui gráficos e sons incríveis, que adicionam à experiência do jogo.
+
+Uma das vantagens do Angry Birds é a sua jogabilidade simples e fácil de aprender. O jogo é fácil o suficiente para que qualquer pessoa possa jogar, mas também desafiador o suficiente para manter os jogadores interessados e engajados. O Angry Birds também é altamente viciante, com muitos jogadores relatando que passaram horas jogando o jogo.
+
+Outra vantagem do jogo é que ele é adequado para jogadores de todas as idades. O jogo é divertido e emocionante para crianças e adultos, tornando-o um ótimo jogo para jogar em família. Além disso, o Angry Birds é gratuito para baixar e jogar, tornando-o acessível a todos.
+
+Em resumo, o Angry Birds é um jogo de quebra-cabeças emocionante e viciante que ganhou milhões de fãs em todo o mundo. Com sua jogabilidade simples, mas desafiadora, gráficos e sons incríveis, e níveis cada vez mais difíceis, o jogo é uma ótima maneira de passar o tempo.
+---
 
