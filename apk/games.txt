@@ -21,10 +21,10 @@ Ao jogar, você pode melhorar o desempenho do seu veículo com o dinheiro que ga
 O rei das corridas de escalada
 Baixe o APK de Hill Climb Racing e curta um dos clássicos do gênero no Android. O jogo tem controles simples e uma mecânica altamente viciante. Graças ao grande número de veículos e cenários que podem ser desbloqueados, você pode jogar por várias horas.
 ---
-icon=https://image.winudf.com/v2/image1/Y29tLnJvdmlvLmFuZ3J5YmlyZHNfaWNvbl8xNTU0OTk0ODg3XzA4NA/icon.webp?w=280&fakeurl=1&type=.webp
+icon=https://www.google.com/url?sa=i&url=https%3A%2F%2Fangrybirds.fandom.com%2Fwiki%2FAngry_Birds_%2528series%2529%2FApp_Icons&psig=AOvVaw2cMdgvmjavnqoiqA8K3KRK&ust=1733757766470000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiP45C9mIoDFQAAAAAdAAAAABAJ
 banner=
-screenshot=https://image.winudf.com/v2/image1/Y29tLnJvdmlvLmFuZ3J5YmlyZHNfc2NyZWVuX3B0LUJSXzBfMTU1NTU2MDA3Ml8wNzU/screen-0.webp?h=300&fakeurl=1&type=.webp
-screenshot2=https://image.winudf.com/v2/image1/Y29tLnJvdmlvLmFuZ3J5YmlyZHNfc2NyZWVuX3B0LUJSXzFfMTU1NTU2MDA3Ml8wMDY/screen-1.webp?h=300&fakeurl=1&type=.webp
+screenshot=https://cdn6.aptoide.com/imgs/5/1/5/5151d42a979a0ef1abeabc52b6b6c689_screen.png?w=103
+screenshot2=https://cdn6.aptoide.com/imgs/e/6/c/e6c5343db9b7c503e3aa00f1814e9305_screen.png?w=103
 apk=https://archive.org/download/angry-birds-1-last-rel/Angry_Birds_8.0.3%5B1%5D.apk
 name=Angry Birds
 developer=Rovio Entertainment Ltd.
