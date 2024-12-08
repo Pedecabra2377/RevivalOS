@@ -1,8 +1,8 @@
 # Example entry in games.txt or apps.txt
 
-icon=thumbnails/hcr2.png
-banner=thumbnails/hcr2.png
-screenshot=thumbnails/hcr2.png
+icon=thumbnails/hcr.png
+banner=thumbnails/hcr3.png
+screenshot=thumbnails/hcr3.png
 screenshot2=thumbnails/hcr2.png
 apk=apk/hcr.apk
 name=Hill Climb Racing
