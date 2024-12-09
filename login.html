@@ -30,21 +30,18 @@
   </div>
    
 <center>
-                  <form>
-                    <fieldset>
-                        <legend>Login</legend>
-                        <div class="form-group">
-                            <label for="email">Endereço de e-mail:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Ensira o e-mail" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Senha:</label>
-                            <input type="password" class="form-control" id="password" placeholder="Insira a senha" required>
-                        </div>
-                        <button type="button" id="loginBtn" class="btn btn-primary">Login</button>
-                        <div class="mt-2">Caso não tenha uma conta, <a href="/register">Registrar uma conta</a></div>
-                    </fieldset>
-                </form>
+  <form id="login-form">
+            <h2>Login</h2>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" required>
+
+            <button type="submit">Login</button>
+
+            <button id="forgot">Esqueci a senha</button>
+        </form>
   </center>  
   </div>
           
