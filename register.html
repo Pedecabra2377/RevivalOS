@@ -36,8 +36,7 @@
          include("php/config.php");
          if(isset($_POST['submit'])){
             $username = $_POST['username'];
-            $email = $_POST['email'];
-            $age = $_POST['age'];
+            $email = $_POST['email'];
             $password = $_POST['password'];
 
          //verifying the unique email
@@ -48,7 +47,7 @@
             echo "<div class='message'>
                       <p>E-mail utilizado, por favor utilizar outro!</p>
                   </div> <br>";
-            echo "<a href='javascript:self.history.back()'><button class='btn'>Go Back</button>";
+            echo "<a href='javascript:self.history.back()'><button class='btn'>Voltar</button>";
          }
          else{
 
