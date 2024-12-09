@@ -46,18 +46,18 @@
 
          if(mysqli_num_rows($verify_query) !=0 ){
             echo "<div class='message'>
-                      <p>This email is used, Try another One Please!</p>
+                      <p>E-mail utilizado, por favor utilizar outro!</p>
                   </div> <br>";
             echo "<a href='javascript:self.history.back()'><button class='btn'>Go Back</button>";
          }
          else{
 
-            mysqli_query($con,"INSERT INTO users(Username,Email,Age,Password) VALUES('$username','$email','$age','$password')") or die("Erroe Occured");
+            mysqli_query($con,"INSERT INTO users(Username,Email,Password) VALUES('$username','$email','$age','$password')") or die("Ocorreu um problema");
 
             echo "<div class='message'>
-                      <p>Registration successfully!</p>
+                      <p>Registrado com sucesso!</p>
                   </div> <br>";
-            echo "<a href='index.php'><button class='btn'>Login Now</button>";
+            echo "<a href='login.html'><button class='btn'>Entrar agora</button>";
          
 
          }
@@ -66,7 +66,7 @@
          
         ?>
 
-            <header>Sign Up</header>
+            <header>Registro</header>
             <form action="" method="post">
                 <div class="field input">
                     <label for="username">Username</label>
@@ -77,13 +77,9 @@
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" autocomplete="off" required>
                 </div>
-
+
                 <div class="field input">
-                    <label for="age">Age</label>
-                    <input type="number" name="age" id="age" autocomplete="off" required>
-                </div>
-                <div class="field input">
-                    <label for="password">Password</label>
+                    <label for="password">Senha</label>
                     <input type="password" name="password" id="password" autocomplete="off" required>
                 </div>
 
@@ -92,7 +88,7 @@
                     <input type="submit" class="btn" name="submit" value="Register" required>
                 </div>
                 <div class="links">
-                    Already a member? <a href="index.php">Sign In</a>
+                    Já tem uma conta? <a href="login.html">Entrar</a>
                 </div>
             </form>
         </div>
