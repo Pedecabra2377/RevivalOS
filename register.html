@@ -29,22 +29,18 @@
   </div>
    
 <center>
-        <form id="register-form">
-            <h2>Registrar</h2>
-            <div class="form-group">
-                <label for="register-email">E-mail</label>
-                <input type="email" id="register-email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="register-password">Senha</label>
-                <input type="password" id="register-password" name="password" required>
-            </div>
-            <div class="form-group">
-                <label for="register-confirm-password">Confirmar senha</label>
-                <input type="password" id="register-confirm-password" name="confirm-password" required>
-            </div>
-            <button type="submit">Registrar</button>
-        </form>
+ 	<h1>Login</h1>
+			<form action="authenticate.php" method="post">
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="E-mail" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Senha" id="password" required>
+				<input type="submit" value="Login">
+			</form>
   </center>  
   </div>
           
