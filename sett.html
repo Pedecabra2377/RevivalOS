@@ -18,7 +18,11 @@
     font-weight: bold;
     padding: 12px 0;
   }
-
+<script>
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: login.html');
+	exit;
+</script>
   </style>
   </head>
   <body>
