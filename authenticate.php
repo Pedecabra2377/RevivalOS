@@ -11,3 +11,8 @@ if ( mysqli_connect_errno() ) {
 	// If there is an error with the connection, stop the script and display the error.
 	exit('Ocorreu um erro: ' . mysqli_connect_error());
 }
+// Now we check if the data from the login form was submitted, isset() will check if the data exists.
+if ( !isset($_POST['username'], $_POST['password']) ) {
+	// Erro ao conectar ao servidor
+	exit('Por favor preencher o e-mail, e senha.');
+}
