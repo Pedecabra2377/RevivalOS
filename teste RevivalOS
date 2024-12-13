@@ -345,60 +345,7 @@
 
         </div>
 
-        <div id="search-bar">
-
-            <a href='https://pedecabra2377.github.io/RevivalOS/search.html' id='search-button'></a> <!-- Butonul de căutare ca imagine -->
-
-        </div>
-
-    </header>
-
-    <nav>
-
-        <ul>
-
-            <li><a href='https://pedecabra2377.github.io/RevivalOS/index.html'>Apps</a></li>
-
-            <li><a href='https://pedecabra2377.github.io/RevivalOS/games.html'>Jogos</a></li>
-
-            <li><a href='https://pedecabra2377.github.io/RevivalOS/downloads.html'>Downloads</a></li>
-
-        </ul>
-
-    </nav>
-
-    <div class="spacer"></div>
-
-    <div class="app-container" onclick="location.href='https://pedecabra2377.github.io/RevivalOS/app1.html'"> <!-- Secțiunea cu aplicația și fundal alb -->
-
-        <div class="app">
-
-            <img src="cam.png" alt="erro!">
-
-            <div class="app-details">
-
-                <div class="app-name">Câmera</div>
-
-                <div class="app-description">Revival Team, Inc.</div>
-
-            </div>
-
-            <div class="app-price">GRATUITO</div>
-
-        </div>
-        <div class="app" onclick="window.location.href='https://pedecabra2377.github.io/RevivalOS/app2.html';">
-            <img src="yt.png" alt="Erro!">
-            <div class="app-details">
-                <div class="app-name">YouTube</div>
-                <div class="app-description">Google LLC</div>
-            </div>
-            <div class="app-price">GRATUITO</div>
-        </div>
-    
-
-    </div>
-
-</body>
+       
 
 </html>end word<html/>
 
