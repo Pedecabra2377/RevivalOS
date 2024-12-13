@@ -1,14 +1,7 @@
 <html>hello world<html/>
 
 <!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-scale=1.0">
 
     <title>Droid Market</title>
     <style> 
@@ -173,59 +166,6 @@
 
             display: flex;
 
-            justify-content: space-between; /* Spațiu egal între butoane */
-
-            padding: 0; /* Eliminăm padding-ul pentru lista ul */
-
-            width: 100%; /* Asigurăm că meniul ocupă tot spațiul disponibil */
-
-        }
-
-
-
-        nav li {
-
-            margin: 0; /* Eliminăm marginul pe butoane */
-
-            flex-grow: 1; /* Faceți butoanele să ocupe spațiul disponibil */
-
-            text-align: center; /* Aliniere text la centru */
-
-        }
-
-
-
-        nav a {
-
-            text-decoration: none;
-
-            color: #333;
-
-            font-weight: bold;
-
-            background: linear-gradient(to bottom, #ececec, #d3d3d3); /* Gradient alb spre gri pentru buton */
-
-            border: 1px solid #ccc; /* Bordură gri pentru buton */
-
-            cursor: pointer;
-
-            transition: background-color 0.3s, border 0.3s, color 0.3s; /* Adăugăm animații pentru hover */
-
-            display: flex;
-
-            justify-content: center;
-
-            align-items: center;
-
-            border-radius: 0px; /* Adăugăm colțuri rotunde */
-
-            min-width: 0; /* Permiteți butoanelor să se restrângă la conținut */
-
-            padding: 10px 20px; /* Adăugăm spațiu în jurul textului pentru a mări butonul */
-
-            width: 100%;
-
-            height: 4
 
        
 
