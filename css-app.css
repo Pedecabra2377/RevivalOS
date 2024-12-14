@@ -1,322 +1,349 @@
-    /* Style the magnifying glass button */
-    #searchButton {
-   background-color: transparent;
-      margin-top: 4px;
-  font-size: 24px;
-  float: right;
-  color: white;
-  border: none;
-  
-    }
-
-    /* Initially hide the search div */
-    #searchDiv {
-      display: none;
-      margin-top: 10px;
-    }
-
-/* Loading screen styles */
-#loading-screen {
-  color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #222222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 9999;
-  opacity: 1;
-  transition: opacity 0.3s ease-out;
-}
-
-/* Hide main content until loading completes */
-#content 
-  text-align: center;
-  padding: 20px;
-  width: 100%;
-}
-
-.loadingimg { }
-
-/* Full page overlay */
-#fullpage {
-  display: none;
-  position: absolute;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: black;
-}
-
-.app-item-lol {
-  display: flex;
-  background-color: white;
-  width: 100%;
-  margin: 5px 0;
-  padding: 10px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
-.app-info-lol {
-  margin-left: 10px;
-}
-
-.app-name-lol {
-  font-size: 16px;
-  font-weight: bold;
-  color: #888888;
-}
-
-.app-company-lol {
-  color: #888888;
-  font-size: 12px;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-.float-container {
-  display: flex;
-}
-
-.float-child {
-  flex: 1;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  text-align: center;
-  color: white;
-  width: 50%;
-}
-
-#testcontainer {
-  overflow: auto;
-}
-
-#testleft {
-  float: left;
-  width: 50%;
-}
-
-#testright {
-  margin-left: 50%;
-}
-
-.container-home-bannerbutton {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-
-.float-child iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 420px;
-}
-
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+/* Clearfix (clear floats) */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+.shadow-drop-2-center {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.topbardiv {
+	margin: 4px;
+	float: right;
+	background-color: white;
+	max-width: 500px;
+	height: 35px;
+}
+
+.search {
+	margin-top: 4px;
+	float: right;
+}
+/* Roboto is Material's default font */
+@import url('https: //fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* Ripple effect */
+.ripple {
+	background-position: center;
+	transition: background 0.5s;
+}
+
+.ripple:hover {
+	background: #73B737 radial-gradient(circle, transparent 50%, #73B737 1%) center / 15000%;
+}
+
+.ripple:active {
+	background-color: #BAFF49;
+	background-size: 100%;
+	transition: background 0s;
+}
+/* Button style */
+input {
+	border: none;
+	border-radius: 2px;
+	padding: 12px 18px;
+	top: 0px;
+	font-size: 16px;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: white;
+	background-color: #43a047;
+	outline: none;
+}
+
+form {
+	display: inline;
+}
+
 body {
-  margin: 0px;
-  background: #CCCCCC;
-  font-family: "Roboto", sans-serif;
-  color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: black;
+	margin: auto;
+	line-height: 1.4;
+	background: #ffffff;
+	background-repeat: repeat;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
-#screen {
-  width: 100%;
-  height: 100%;
-  background: url("../images/aa5f96f0-ab0a-4469-9d50-d0c05e4589d5-DMQoP93.png");
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
-#topbar {
-  width: 100%;
-  height: 50px;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAcSURBVBhXY6ivr2eAAWQ2SIxactQyB+5QTLcBAE6PF9GtwQmMAAAAAElFTkSuQmCC);
+.descapp {
+	background-color: #F8F9FA;
 }
 
-#icon {
-  width: 45px;
-  height: 45px;
-  margin: 4px 5px 5px 5px;
-  float: left;
+#wrap {
+	width: 32.30px;
+	height: 320px;
+	background: red;
+	position: relative;
 }
 
-#search {
-  margin-top: 4px;
-  float: right;
+.idklol {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-#share {
-  float: right;
-  margin-top: 4px;
-  margin-left: 20px;
-  margin-right: 20px;
+img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
-#title {
-  font-size: 16px;
-  padding-top: 15px;
-  float: left;
+.text {
+	font-size: 20px;
+	padding-left: 20px;
+}
+/* unvisited link */
+a:link {
+	color: black;
+}
+/* visited link */
+a:visited {
+	color: black;
+}
+/* mouse over link */
+a:hover {
+	color: lightgray;
 }
 
-/* Title bar containing app icon, title, developer, and install button */
-#titlebar {
-  background-color: #3d3d3d;
-  width: 100%;
-  min-height: 120px;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  position: relative;
+h3,
+h4 {
+	display: inline-block;
 }
 
-/* Adjust icon position */
-#appIcon {
-  width: 65px;
-  
-  margin-left: 10px;
-  margin-right: 10px;
-  display: inline-block;
+.box1 {
+	float: center;
+	background-color: #F8F9FA;
+	color: #000000;
+	padding: 20px;
+	max-width: 500px;
 }
 
-#appIcondesk {
-  width: 95%;
-  
-  margin-left: 10px;
-  margin-right: 10px;
-  display: inline-block;
+.box2 {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	float: center;
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 20px;
+	max-width: 500px;
+	height: 13px;
 }
 
-
-/* Container for app info text */
-#appInfos {
-  flex-grow: 1;
-  padding: 10px;
+.box3 {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	float: center;
+	background-color: #F8F9FA;
+	padding: 20px;
+	max-width: 500px;
+	height: 150px;
+	-ms-overflow-style: none;
+	/* for Internet Explorer, Edge */
+	scrollbar-width: none;
+	/* for Firefox */
+	overflow-y: scroll;
 }
 
-/* Title and developer name styling */
-#appTitle {
-  font-weight: bold;
-  font-size: 12.5px;
-  color: #FFFFFF;
-  margin: 0;
+.box3::-webkit-scrollbar {
+	display: none;
+	/* for Chrome, Safari, and Opera */
 }
 
-#appCreator {
-  color: #AAAAAA;
-  margin-top: 5px;
+.banner {
+	float: center;
+	background-color: #FFA500;
+	color: #FAFAFA;
+	padding: 20px;
+	width: 580px;
+	height: 40px;
 }
 
-/* Install button style */
-#installButton {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 1px solid white;
-  padding: 8px 20px;
-  background-color: #296ccf;
-  color: white;
-  font-size: 14px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  width: 95px;
-  height: 29px;
+.topbar {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	/* background-color: #659A37; */
+	background-color: #43a047;
+	color: #000000;
+	padding: 5px;
+	max-width: 540px;
+	height: 50px;
 }
 
-/* Install button style */
-#installButtondesk {
-  border: 1px solid white;
-  padding: 8px 20px;
-  background-color: #296ccf;
-  color: white;
-  font-size: 14px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  width: 95px;
-  height: 29px;
-}
+.topbar a {
+	float: center;
+	color: #000000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
 }
 
-/* Separator line below title bar */
-#separator {
-  width: 100%;
-  height: 4px;
-  background-color: #99cc00;
+.topbar a:hover {
+	color: black;
+	opacity: .4;
 }
 
-/* Screenshot area styling */
-#screenshotArea {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 10px;
+.topbar a.active {
+	color: black;
+	opacity: .4;
 }
 
-#ss1, #ss2, #ss3 {
-  height: 170px;
-  margin-right: 10px;
-  display: inline-block;
+.topbar2 {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	left: 50%;
+	background-color: #EDE7F6;
+	color: #000000;
+	padding: 20px;
+	max-width: 100%;
+	height: 17px;
 }
 
-#topDeveloper {
-  position: absolute;
-  margin-left: 80px;
-  margin-top: -15px;
+.topbar2 a {
+	float: center;
+	color: #000000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
 }
 
-a {
-  color: white;
-  text-decoration: none;
+.topbar2 a:hover {
+	color: black;
+	opacity: .4;
 }
 
-#ratings {
-  color: #000000;
+.topbar2 a.active {
+	color: black;
+	opacity: .4;
 }
 
-p {
-  color: black;
-  text-decoration: none;
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	color: #000000;
+	left: 0;
+	background-color: #E7E5EC;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-/* Minor responsive adjustments */
-@media screen and (max-width: 480px) {
-  #installButton {
-    font-size: 12px;
-    padding: 6px 12px;
-    right: 5px;
-  }
-  #appInfos {
-    margin-right: 100px;
-  }
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	background-color: #E7E5EC;
+	color: #000000;
+	display: block;
+	transition: 0.3s;
 }
+
+.sidenav a:hover {
+	color: #000000;
+	background-color: #E7E5EC;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	background-color: #E7E5EC;
+	color: #000000;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2024-10-22 17:0:22
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation shadow-drop-2-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes shadow-drop-2-center {
+	0% {
+		-webkit-transform: translatez(0);
+		transform: translatez(0);
+		-webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		-webkit-transform: translatez(50px);
+		transform: translatez(50px);
+		-webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+	}
+}
+
+@keyframes shadow-drop-2-center {
+	0% {
+		-webkit-transform: translatez(0);
+		transform: translatez(0);
+		-webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		-webkit-transform: translatez(50px);
+		transform: translatez(50px);
+		-webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+	}
+}
+
+iframe[seamless] {
+	border: none;
+}
+/* Start Project Wallace extracted inline styles */
+span.ripple {
+	font-size: 25px;
+	cursor: pointer;
+}
+
+img {
+	width: 64;
+	height: 64px;
+}
+/** End Project Wallace extracted inline styles */
