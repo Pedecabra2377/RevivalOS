@@ -1,13 +1,15 @@
 # Example entry in games.txt or apps.txt
 
-icon=https://www.apkmirror.com/wp-content/themes/APKMirror/ap_resize/ap_resize.php?src=https%3A%2F%2Fdownloadr2.apkmirror.com%2Fwp-content%2Fuploads%2F2014%2F12%2F54824d803365a.png&w=192&h=192&q=100
+icon=https://img.utdstc.com/icon/9f1/c7b/9f1c7ba989ad4a11039b0a5a82bc4a8db39dda35d2c8fe26a46d1a0d277df877:200
 banner=
-screenshot=
-screenshot2=
-apk=apk/YouTube.apk
-name=YouTube
+screenshot=https://img.utdstc.com/screen/937/ea9/937ea92939b9bfb16d873117378a641e805ec6f874b6474566eedb48642e4a4b:300
+screenshot2=https://img.utdstc.com/screen/97f/c75/97fc753bb710827c1f9daf0edd85c5d70e728f423c6c3a9c376b660e40b6ce62:300
+apk=https://archive.org/download/com.google.android.music-5.5.1514O.1185867-1514-minAPI9/com.google.android.music-5.5.1514O.1185867-1514-minAPI9.apk
+name=Google Play Música
 developer=Google LLC
-description=YouTube é um aplicativo que permite assistir e compartilhar vídeos on-line de forma rápida e intuitiva. Essa plataforma popular, de propriedade do Google, oferece acesso a um catálogo quase infinito de conteúdo audiovisual que você pode reproduzir facilmente em seu smartphone. E o melhor de tudo é que você pode aproveitar as funcionalidades básicas da ferramenta gratuitamente.
+description=O Google Play Music é uma aplicação oficial do Google para ouvir músicas, a partir de seu popular serviço diretamente em telemóveis Android, por meio de streaming, sem armazenamento de música na memória do dispositivo.
+
+A aplicação permite aos utilizadores ouvir uma coleção inteira de músicas de qualquer lugar. Todos os álbuns e músicas são armazenados on-line através de uma conta de utilizador, e nunca terá que se preocupar com o espaço de armazenamento no seu telemóvel. Além disso, qualquer música que compre vai aparecer automaticamente na sua coleção musical.
 ---
 
 
