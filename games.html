@@ -24,7 +24,7 @@
 
     function loadData() {
       var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'apk/apps.txt', true);
+      xhr.open('GET', 'apk/games.txt', true);
       xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
           var data = xhr.responseText;
@@ -87,7 +87,6 @@
       
          <div class="topbar">
         <center>
-          <span class="ripple" style="font-size:25px;cursor:pointer" onclick="openNav()">&nbsp; &amp;vellip; &nbsp;</span>  &nbsp;  &nbsp;
 <input type="button" class="ripple" onclick="location.href='apps.html';" value="Apps">
           <input type="button" class="ripple" onclick="location.href='games.html';" value="Jogos">
 
