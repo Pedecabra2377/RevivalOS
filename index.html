@@ -203,6 +203,78 @@
 		</script>
 		
 		<script type="text/javascript" src="material-touch.js"></script>
+<script>
+    function myFunction() {
+      var input = document.getElementById("Search").value.toUpperCase();
+      var targets = document.getElementsByClassName('target');
+      for (var i = 0; i < targets.length; i++) {
+        if (targets[i].innerText.toUpperCase().indexOf(input) > -1) {
+          targets[i].style.display = "block";
+        } else {
+          targets[i].style.display = "none";
+        }
+      }
+    }
+
+    function loadData() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'apk/apps.txt', true);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var data = xhr.responseText;
+          var entries = data.split('---');
+          var container = document.getElementById('games-list');
+
+          for (var i = 0; i < entries.length; i++) {
+            var entry = entries[i].trim();
+            if (!entry) continue;
+
+            var details = entry.split('\n');
+            var info = {};
+            for (var j = 0; j < details.length; j++) {
+              var line = details[j].split('=');
+              info[line[0].trim()] = line[1] ? line[1].trim() : '';
+            }
+
+            // Create a new div and populate it with inner content
+            var item = document.createElement('div');
+            item.className = 'app-item-lol target';
+
+            var icon = document.createElement('img');
+            icon.className = 'icon';
+            icon.src = info.icon || '';
+            icon.alt = info.name + ' icon';
+            icon.width = 50;
+
+            var link = document.createElement('a');
+            link.href = 'app_detail.html?id=' + i;
+            link.appendChild(icon);
+
+            var appInfo = document.createElement('div');
+            appInfo.className = 'app-info-lol';
+
+            var nameSpan = document.createElement('span');
+            nameSpan.className = 'app-name-lol';
+            nameSpan.innerText = info.name || 'Unknown';
+
+            var devSpan = document.createElement('span');
+            devSpan.className = 'app-company-lol';
+            devSpan.innerText = info.developer || 'Unknown';
+
+            appInfo.appendChild(nameSpan);
+            appInfo.appendChild(devSpan);
+            link.appendChild(appInfo);
+            item.appendChild(link);
+
+            container.appendChild(item);
+          }
+        }
+      };
+      xhr.send();
+    }
+    
+    window.onload = loadData;
+  </script>
 	</head>
 	<body>
 		<header role="toolbar" class="appBar z2">
