@@ -1,1 +1,14 @@
+# Example entry in games.txt or apps.txt
+
+icon=thumbnails/yt.png
+banner=thumbnails/yt2.png
+screenshot=thumbnails/yt2.png
+screenshot2=thumbnails/yt2.png
+apk=apk/YouTube.apk
+name=YouTube
+developer=Google LLC
+description=YouTube é um aplicativo que permite assistir e compartilhar vídeos on-line de forma rápida e intuitiva. Essa plataforma popular, de propriedade do Google, oferece acesso a um catálogo quase infinito de conteúdo audiovisual que você pode reproduzir facilmente em seu smartphone. E o melhor de tudo é que você pode aproveitar as funcionalidades básicas da ferramenta gratuitamente.
+---
+
+
 
