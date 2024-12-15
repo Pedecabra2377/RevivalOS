@@ -1,9 +1,9 @@
 # Example entry in games.txt or apps.txt
 
-icon=thumbnails/yt.png
-banner=thumbnails/yt2.png
-screenshot=thumbnails/yt2.png
-screenshot2=thumbnails/yt2.png
+icon=https://www.apkmirror.com/wp-content/themes/APKMirror/ap_resize/ap_resize.php?src=https%3A%2F%2Fdownloadr2.apkmirror.com%2Fwp-content%2Fuploads%2F2014%2F12%2F54824d803365a.png&w=192&h=192&q=100
+banner=
+screenshot=
+screenshot2=
 apk=apk/YouTube.apk
 name=YouTube
 developer=Google LLC
