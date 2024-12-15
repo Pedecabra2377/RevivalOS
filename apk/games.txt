@@ -1,0 +1,14 @@
+# Example entry in games.txt or apps.txt
+
+icon=
+banner=
+screenshot=
+screenshot2=
+apk=apk/
+name=APP DE TESTE
+developer= Revival Team
+description=TESTE DE DESCRIÇÃO
+---
+
+
+
