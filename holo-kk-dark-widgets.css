@@ -1,0 +1,51 @@
+/* KitKat Holo Dark styles for widgets
+ * Part of the Holo Web CSS library
+ *
+ * Copyright 2012-2015 Zachary Yaro
+ * Released under the MIT license
+ * http://holo.zmyaro.com/LICENSE.txt
+ */
+ 
+ .actionBar, .holo-actionBar {
+	background-color: #222222;
+	
+	border-top-color: #393939;
+	border-bottom-color: #1B1B1B;
+}
+footer.actionBar, footer.holo-actionBar {
+	border-top-color: #1B1B1B;
+}
+
+.actionBar button:enabled:active, .holo-actionBar button:enabled:active,
+.actionBar *[role="button"]:active, .holo-actionBar *[role="button"]:active,
+.actionBar button:enabled.active, .holo-actionBar button:enabled.active,
+.actionBar *[role="button"].active, .holo-actionBar *[role="button"].active {
+	background-color: rgba(204, 204, 204, 0.25);
+}
+
+.actionBar .holo-title.holo-up, .holo-actionBar .holo-title.holo-up {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAAAEgAAABIAEbJaz4AAAAJdnBBZwAAABAAAAAQAFzGrcMAAADaSURBVCjPddG9SkNBFATgb5drCAhiYRUs7BQsRDCtQfIevppP4k/KgIUgiJYWEQtLxT/uXYu9N9lIMtVh9pyZYTZokbqhJ4q+1QRUFgiSbee2vLroyKq4D5JTu2pTtRgaiMVzY+BY7cG9oMmmUYkzfZ8uSyrmY0Gy70Bw60WUcsSFRRKM9LyZZCKUCiKG9vy68pHvlyzaKZR1LC80mHq2YWxTM9f/F/LGjx2jTKRyoQ356ElyYpA1VvVw7UvfeFUPJNHMncqhI0kMpULoGp+YeTdUdVXP86777j8ScUEXuCRR/QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxMS0wNy0wMVQxMzoxMDoyNS0wNzowMDPfgNMAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTEtMDctMDFUMTM6MTA6MjUtMDc6MDBCgjhvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg==);
+}
+
+.holo-list li {
+	border-color: #262626;
+	border-color: rgba(255, 255, 255, 0.15);
+}
+	.holo-list li button:focus,
+	.holo-list li *[role="button"]:focus {
+		background-color: #0F3645;
+		background-color: rgba(51, 181, 229, 0.31);
+		-webkit-box-shadow: inset 0 0 0 2px rgba(51, 181, 229, 0.42);
+		   -moz-box-shadow: inset 0 0 0 2px rgba(51, 181, 229, 0.42);
+		        box-shadow: inset 0 0 0 2px rgba(51, 181, 229, 0.42);
+	}
+	.holo-list li button:enabled:active,
+	.holo-list li *[role="button"]:active,
+	.holo-list li button:enabled.active,
+	.holo-list li *[role="button"].active {
+		background-color: #333333;
+		background-color: rgba(153, 153, 153, 0.2);
+		-webkit-box-shadow: none;
+		   -moz-box-shadow: none;
+		        box-shadow: none;
+	}
