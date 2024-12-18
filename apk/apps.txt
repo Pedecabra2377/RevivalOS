@@ -9,5 +9,12 @@ name=YouTube
 developer=Google LLC
 description=YouTube é um aplicativo que permite assistir e compartilhar vídeos on-line de forma rápida e intuitiva. Essa plataforma popular, de propriedade do Google, oferece acesso a um catálogo quase infinito de conteúdo audiovisual que você pode reproduzir facilmente em seu smartphone. E o melhor de tudo é que você pode aproveitar as funcionalidades básicas da ferramenta gratuitamente.
 ---
-
+icon=https://static.wikia.nocookie.net/logopedia/images/4/43/Google_Play_Music_icon.png/revision/latest/scale-to-width-down/200?cb=20241107210620
+banner=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShYdcE0zkomtaJqjznQxg6dtH0qYA-eX9T_Nrbw6bc6fnihVNACmKusRuU&s=10
+screenshot=https://archive.org/download/google-play-music/Screenshot_20210305-135527.png
+screenshot2=
+apk=https://archive.org/download/google-play-music/Google%20Play%20Music.apk
+name=Google Play Música
+developer=Google LLC
+description=YouTube é um aplicativo que permite assistir e compartilhar vídeos on-line de forma rápida e intuitiva. Essa plataforma popular, de propriedade do Google, oferece acesso a um catálogo quase infinito de conteúdo audiovisual que você pode reproduzir facilmente em seu smartphone. E o melhor de tudo é que você pode aproveitar as funcionalidades básicas da ferramenta gratuitamente.
 
