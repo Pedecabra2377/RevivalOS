@@ -19,4 +19,13 @@ developer=Google LLC
 description=O Google Play Music é uma aplicação oficial do Google para ouvir músicas, a partir de seu popular serviço diretamente em telemóveis Android, por meio de streaming, sem armazenamento de música na memória do dispositivo.
 
 A aplicação permite aos utilizadores ouvir uma coleção inteira de músicas de qualquer lugar. Todos os álbuns e músicas são armazenados on-line através de uma conta de utilizador, e nunca terá que se preocupar com o espaço de armazenamento no seu telemóvel. Além disso, qualquer música que compre vai aparecer automaticamente na sua coleção musical.
-
+---
+icon=https://www.apkmirror.com/wp-content/themes/APKMirror/ap_resize/ap_resize.php?src=https%3A%2F%2Fdownloadr2.apkmirror.com%2Fwp-content%2Fuploads%2F2014%2F10%2F542d228c6af99.png&w=192&h=192&q=100
+banner=https://www.webdesignmuseum.org/uploaded/apps-screens/android/2013/google-play-books-2013-02.jpg
+screenshot=https://www.webdesignmuseum.org/uploaded/apps-screens/android/2013/google-play-books-2013-03.jpg
+screenshot2=https://www.webdesignmuseum.org/uploaded/apps-screens/android/2013/google-play-books-2013-06.jpg
+apk=https://download.apkcombo.com/com.google.android.apps.books/Google%20Play%20Books_5.0.5_RC03.225399364_apkcombo.com.apk?ecp=Y29tLmdvb2dsZS5hbmRyb2lkLmFwcHMuYm9va3MvNS4wLjVfUkMwMy4yMjUzOTkzNjQvNzA1MDEuNjIyOGJmZGYzZGM4N2NiMTZiY2E4NDU5MzE0ZDZhZmNkNWJiMTU0Ni5hcGs=&iat=1734565667&sig=3df949a2d40ce5b7dc986c3ad64f3b13&size=15229531&from=cf&version=old&lang=pt&fp=c75fb7ab980540f8e66ffbb297c9342b&ip=45.183.80.173
+name=Google Play Livros
+developer=Google LLC
+description=YouTube é um aplicativo que permite assistir e compartilhar vídeos on-line de forma rápida e intuitiva. Essa plataforma popular, de propriedade do Google, oferece acesso a um catálogo quase infinito de conteúdo audiovisual que você pode reproduzir facilmente em seu smartphone. E o melhor de tudo é que você pode aproveitar as funcionalidades básicas da ferramenta gratuitamente.
+---
