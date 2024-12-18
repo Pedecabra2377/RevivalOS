@@ -43,3 +43,12 @@ description=Corte a corda para alimentar Om Nom com doces! 600 milhões de downl
 
 Um pacote misterioso chegou, e o monstrinho dentro dele tem apenas um pedido... DOCES! Colete estrelas douradas, descubra prêmios escondidos e desbloqueie novos níveis emocionantes neste jogo viciante, divertido e premiado baseado em física!
 ---
+icon=https://archive.org/download/zombie-tsunami-1.7.31_202402/icon.png
+banner=https://img.utdstc.com/screen/011/a86/011a86ded61f82be745a3d0a10e8012e44e8e6538de2e79f84607744a3c4722b:300
+screenshot=https://img.utdstc.com/screen/58e/aa0/58eaa005c42a7ce556e141e38a0eaad2afadb18677a75791cf24dc63100e4e11:300
+screenshot2=https://img.utdstc.com/screen/c44/533/c44533492eef28dac4898db962540e64355e6b1445f4fda95fdac1df7193a325:300
+apk=https://archive.org/download/zombie-tsunami-1.7.31_202402/Zombie_Tsunami-1.7.31.apk
+name=Zombie Tsunami
+developer=Mobigame SAS
+description=Adicione quantos zumbis puder ao seu estoque. Diversão frenética de comer carne para toda a família! Continue enquanto pelo menos um zumbi ainda estiver correndo (e não precisa ser o zumbi com o qual você começou). Colete 8 power-ups e bônus diferentes para atropelar e destruir mais. Vire carros, ônibus, veículos e tanques para comer as vítimas dentro. Mais de 300 missões diferentes para devorar. 9 locais no mundo para debandar seus zumbis.
+---
