@@ -5,7 +5,7 @@ e.preventDefault();
 const username = document.getElementById('username').value;
 const password = document.getElementById('password').value;
 
-fetch('accounts.txt')
+fetch('data.txt')
 .then(response => response.text())
 .then(data => {
 const accounts = data.split('---');
