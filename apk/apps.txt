@@ -19,7 +19,7 @@ developer=Google LLC
 description=O Google Play Music é uma aplicação oficial do Google para ouvir músicas, a partir de seu popular serviço diretamente em telemóveis Android, por meio de streaming, sem armazenamento de música na memória do dispositivo.
 A aplicação permite aos utilizadores ouvir uma coleção inteira de músicas de qualquer lugar. Todos os álbuns e músicas são armazenados on-line através de uma conta de utilizador, e nunca terá que se preocupar com o espaço de armazenamento no seu telemóvel. Além disso, qualquer música que compre vai aparecer automaticamente na sua coleção musical.
 ---
-icon=https://www.apkmirror.com/wp-content/themes/APKMirror/ap_resize/ap_resize.php?src=https%3A%2F%2Fdownloadr2.apkmirror.com%2Fwp-content%2Fuploads%2F2014%2F10%2F542d228c6af99.png&w=192&h=192&q=100
+icon=https://www.apkmirror.com/wp-content/themes/APKMirror/ap_resize/ap_resize.php?src=https%3A%2F%2Fdownloadr2.apkmirror.com%2Fwp-content%2Fuploads%2F2019%2F08%2F5d5430a221db5.png&w=192&h=192&q=100
 banner=https://www.webdesignmuseum.org/uploaded/apps-screens/android/2013/google-play-books-2013-02.jpg
 screenshot=https://www.webdesignmuseum.org/uploaded/apps-screens/android/2013/google-play-books-2013-03.jpg
 screenshot2=https://www.webdesignmuseum.org/uploaded/apps-screens/android/2013/google-play-books-2013-06.jpg
