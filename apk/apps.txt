@@ -9,12 +9,14 @@ name=YouTube
 developer=Google LLC
 description=YouTube é um aplicativo que permite assistir e compartilhar vídeos on-line de forma rápida e intuitiva. Essa plataforma popular, de propriedade do Google, oferece acesso a um catálogo quase infinito de conteúdo audiovisual que você pode reproduzir facilmente em seu smartphone. E o melhor de tudo é que você pode aproveitar as funcionalidades básicas da ferramenta gratuitamente.
 ---
-icon=https://static.wikia.nocookie.net/logopedia/images/4/43/Google_Play_Music_icon.png/revision/latest/scale-to-width-down/200?cb=20241107210620
-banner=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShYdcE0zkomtaJqjznQxg6dtH0qYA-eX9T_Nrbw6bc6fnihVNACmKusRuU&s=10
-screenshot=https://archive.org/download/google-play-music/Screenshot_20210305-135527.png
-screenshot2=
+icon=https://icons.iconarchive.com/icons/marcus-roberto/google-play/512/Google-Play-Music-icon.png
+banner=https://img.utdstc.com/screen/937/ea9/937ea92939b9bfb16d873117378a641e805ec6f874b6474566eedb48642e4a4b:300
+screenshot=https://img.utdstc.com/screen/937/ea9/937ea92939b9bfb16d873117378a641e805ec6f874b6474566eedb48642e4a4b:300
+screenshot2=https://img.utdstc.com/screen/940/a03/940a03900bbb09677ff99816f06ba3b5bbb2aca6fabdbf2aef6244437b2c2bf7:300
 apk=https://archive.org/download/google-play-music/Google%20Play%20Music.apk
 name=Google Play Música
 developer=Google LLC
-description=YouTube é um aplicativo que permite assistir e compartilhar vídeos on-line de forma rápida e intuitiva. Essa plataforma popular, de propriedade do Google, oferece acesso a um catálogo quase infinito de conteúdo audiovisual que você pode reproduzir facilmente em seu smartphone. E o melhor de tudo é que você pode aproveitar as funcionalidades básicas da ferramenta gratuitamente.
+description=O Google Play Music é uma aplicação oficial do Google para ouvir músicas, a partir de seu popular serviço diretamente em telemóveis Android, por meio de streaming, sem armazenamento de música na memória do dispositivo.
+
+A aplicação permite aos utilizadores ouvir uma coleção inteira de músicas de qualquer lugar. Todos os álbuns e músicas são armazenados on-line através de uma conta de utilizador, e nunca terá que se preocupar com o espaço de armazenamento no seu telemóvel. Além disso, qualquer música que compre vai aparecer automaticamente na sua coleção musical.
 
