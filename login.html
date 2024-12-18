@@ -11,23 +11,38 @@
 		<link rel="stylesheet" type="text/css" href="holo-base-widgets.css" />
 		<link rel="stylesheet" type="text/css" href="holo-kk-dark-widgets.css" />
   <style type="text/css">
-<script type="text/javascript" src="login.js"></script>
-			h2 {
-				text-transform: uppercase;
-				font-size: 90%;
-				margin: 0;
-				padding: 4px 8px;
-				border-bottom-style: solid;
-				border-bottom-width: 1px;
-				border-bottom-color: #262626;
-				border-bottom-color: rgba(255, 255, 255, 0.15);
-				color: rgba(255, 255, 255, 0.75);
-			}
-			@media (prefers-color-scheme: light) {
-				h2 {
-					color: rgba(0, 0, 0, 0.75);
-				}
-			}
+<script>
+function loadAccountDetails() {
+const params = new URLSearchParams(window.location.search);
+const accountId = params.get('id');
+
+if (!accountId) return;
+
+fetch('accounts.txt')
+.then(response => response.text())
+.then(data => {
+const accounts = data.split('---');
+const accountData = accounts[accountId];
+
+if (accountData) {
+const lines = accountData.split('\n');
+const info = {};
+
+lines.forEach(line => {
+const [key, value] = line.split('=');
+info[key.trim()] = value.trim();
+});
+
+document.getElementById('email').innerText = info.email;
+document.getElementById('password').innerText = info.password;
+}
+})
+.catch(error => console.error('Error loading data:', error));
+}
+
+loadAccountDetails();
+</script>
+
 		</style>
 
   </head>
@@ -43,18 +58,13 @@
   </div>
 <div>
 <form>
-                <input type="text" name="username" id="username" placeholder="e-mail">
-                <input type="password" name="password" id="password" placeholder="senha">
-                
-                <a href="password.html">
-                    <p>esqueceu a sua senha?</p>
-                </a>
-
-                <button>Login</button>
-                
-                <a href="register.html">
-                    <p>criar uma conta</p>
-                </a>
+<form id="login-form">
+<input type="text" name="username" id="username" placeholder="e-mail">
+<input type="password" name="password" id="password" placeholder="senha">
+<a href="password.html">Esqueceu sua senha?</a>
+<button>Login</button>
+<a href="register.html">Criar conta</a>
+</form>
 </form>
 </div>
 </div>
