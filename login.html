@@ -12,35 +12,34 @@
 		<link rel="stylesheet" type="text/css" href="holo-kk-dark-widgets.css" />
   <style type="text/css">
 <script>
-function loadAccountDetails() {
-const params = new URLSearchParams(window.location.search);
-const accountId = params.get('id');
+const form = document.getElementById('login-form');
 
-if (!accountId) return;
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
 
-fetch('accounts.txt')
-.then(response => response.text())
-.then(data => {
-const accounts = data.split('---');
-const accountData = accounts[accountId];
+  fetch('accounts.txt')
+    .then(response => response.text())
+    .then(data => {
+      const accounts = data.split('---');
+      const accountData = accounts.find(account => {
+        const lines = account.split('\n');
+        const email = lines.find(line => line.startsWith('email=')).split('=')[1].trim();
+        const pwd = lines.find(line => line.startsWith('password=')).split('=')[1].trim();
 
-if (accountData) {
-const lines = accountData.split('\n');
-const info = {};
+        return email === username && pwd === password;
+      });
 
-lines.forEach(line => {
-const [key, value] = line.split('=');
-info[key.trim()] = value.trim();
+      if (accountData) {
+        window.location.href = 'index.html';
+      } else {
+        alert('Credenciais inválidas!');
+      }
+    })
+    .catch(error => console.error('Erro ao carregar dados:', error));
 });
-
-document.getElementById('email').innerText = info.email;
-document.getElementById('password').innerText = info.password;
-}
-})
-.catch(error => console.error('Error loading data:', error));
-}
-
-loadAccountDetails();
+```
 </script>
 
 		</style>
@@ -58,16 +57,14 @@ loadAccountDetails();
   </div>
 <div>
 <form id="login-form">
-<label for="username">e-mail:</label>
-<input type="email" name="username" id="username" placeholder="e-mail" required>
-<label for="password">senha:</label>
-<input type="password" name="password" id="password" placeholder="senha" required>
-<a href="password.html">Esqueceu sua senha?</a>
-<button type="submit">Login</button>
-<a href="register.html">Criar conta</a>
-</form>
-<script src="login.js"></script>
-</form>
+    <label for="username">E-mail:</label>
+    <input type="email" name="username" id="username" placeholder="E-mail" required>
+    <label for="password">Senha:</label>
+    <input type="password" name="password" id="password" placeholder="Senha" required>
+    <a href="password.html">Esqueceu sua senha?</a>
+    <button type="submit">Login</button>
+    <a href="register.html">Criar conta</a>
+  </form>
 </div>
 </div>
 </div>
