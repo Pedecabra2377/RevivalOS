@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="holo-base-widgets.css" />
 		<link rel="stylesheet" type="text/css" href="holo-kk-dark-widgets.css" />
   <style type="text/css">
+<script type="text/javascript" src="login.js"></script>
 			h2 {
 				text-transform: uppercase;
 				font-size: 90%;
@@ -42,14 +43,18 @@
   </div>
 <div>
 <form>
-<h1 style="color: #43afd1; font-size: 20px;">Crie sua conta agora e descubra um mundo de possibilidades!</h1>
-<label style="color: #43afd1;">e-mail:</label>
-<input type="text" id="email">
-<label style="color: #43afd1;">senha:</label>
-<input type="email" id="email" placeholder="Digite seu e-mail">
-<input type="password" id="password" placeholder="Digite sua senha">
-<a role="button" href="">entrar</a>
-<a style="color: #43afd1;" href="error.html">esqueceu a senha?</a>
+                <input type="text" name="username" id="username" placeholder="e-mail">
+                <input type="password" name="password" id="password" placeholder="senha">
+                
+                <a href="password.html">
+                    <p>esqueceu a sua senha?</p>
+                </a>
+
+                <button>Login</button>
+                
+                <a href="register.html">
+                    <p>criar uma conta</p>
+                </a>
 </form>
 </div>
 </div>
