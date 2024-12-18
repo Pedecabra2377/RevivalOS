@@ -1,0 +1,4 @@
+Estrutura do arquivo accounts.txt
+---0
+email=admin@example.com
+password=1234568910
