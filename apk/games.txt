@@ -77,15 +77,15 @@ Faça o download GRÁTIS e comece sua aventura hoje!
 Jetpacks movidos a bala! Dragões mecânicos gigantes! Pássaros que atiram dinheiro! Deixe-me entrar neste "Juego Loco"!
 ---
 icon=https://www.apkmirror.com/wp-content/themes/APKMirror/ap_resize/ap_resize.php?src=https%3A%2F%2Fdownloadr2.apkmirror.com%2Fwp-content%2Fuploads%2F2022%2F01%2F05%2F61ec37bd7a184.png&w=192&h=192&q=100
-banner=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2jbjgn8rVoUOFzS4C-rGPVvkIZp21lDrb43n1z_ROcKGEao7TNB19B_cN&s=10
-screenshot=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2jbjgn8rVoUOFzS4C-rGPVvkIZp21lDrb43n1z_ROcKGEao7TNB19B_cN&s=10
-screenshot2=https://cdn.prod.website-files.com/5fa23905123118739c5e21e2/66fb362949bd26dcef72f1d3_64dd8a5de4ae723b46abd674_FNCBG%20(1).jpg
+banner=https://cdn.prod.website-files.com/5fa23905123118739c5e21e2/66fb362949bd26dcef72f1d3_64dd8a5de4ae723b46abd674_FNCBG%20(1).jpg
+screenshot=https://cdn.prod.website-files.com/5fa23905123118739c5e21e2/66fb362949bd26dcef72f1d3_64dd8a5de4ae723b46abd674_FNCBG%20(1).jpg
+screenshot2=
 apk=https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=5401177&key=30f3f09fe9aa1b21beefdabc687fbe043857d7a1
 name=Fruit Ninja
 developer=Halfbrick Studios
 description=Fruit Ninja é um game para Android divertido e fácil de jogar. Você se transforma em ninja e detona frutas com os dedos
 ---
-icon=https://www.apkmirror.com/wp-content/themes/APKMirror/ap_resize/ap_resize.php?src=https%3A%2F%2Fdownloadr2.apkmirror.com%2Fwp-content%2Fuploads%2F2018%2F07%2F5b4fb65ba1460.png&w=192&h=192&q=100
+icon=https://static.wikia.nocookie.net/despicableme/images/4/43/3.2.0.png/revision/latest/scale-to-width-down/250?cb=20150917042443
 banner=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjBfSY8iW4y5-uX_TUOe94lw-_9-jq9ZVuOo8j4r8WvsWUMo3-huoXblQ&s=10
 screenshot=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjBfSY8iW4y5-uX_TUOe94lw-_9-jq9ZVuOo8j4r8WvsWUMo3-huoXblQ&s=10
 screenshot2=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhtoytvhwE1XXCXH6QNNpVY-cAW_YVaSyMaQ&usqp=CAU
