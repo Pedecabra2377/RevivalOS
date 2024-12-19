@@ -52,3 +52,14 @@ name=Zombie Tsunami
 developer=Mobigame SAS
 description=Adicione quantos zumbis puder ao seu estoque. Diversão frenética de comer carne para toda a família! Continue enquanto pelo menos um zumbi ainda estiver correndo (e não precisa ser o zumbi com o qual você começou). Colete 8 power-ups e bônus diferentes para atropelar e destruir mais. Vire carros, ônibus, veículos e tanques para comer as vítimas dentro. Mais de 300 missões diferentes para devorar. 9 locais no mundo para debandar seus zumbis.
 ---
+icon=https://images.sftcdn.net/images/t_app-icon-m/p/84e742dc-9b37-11e6-93e6-00163ed833e7/1787281700/rayman-jungle-run-icon.png
+banner=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGhxkpOasdnf_TPwaM3rQFKzrM0SegvfhRQ&usqp=CAU
+screenshot=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGhxkpOasdnf_TPwaM3rQFKzrM0SegvfhRQ&usqp=CAU
+screenshot2=
+apk=https://dl.apkvision.org/rayman-jungle-run/rayman-jungle-run-v2.4.3.apk
+name=Rayman Jungle Run
+developer=Ubisoft Entertainment
+description=Um mundo surrealista cheio de desafios
+Corra, salte, voe e dê socos para passar pelos diferentes obstáculos no celular. O objetivo de Rayman Jungle Run é recolher o maior número de Lums, uma espécie de vaga-lume, enquanto corre pelos diferentes cenários.
+Rayman Jungle Run tem 50 fases, contando com as de bônus que são desbloqueadas em cada um dos quatro capítulos do jogo. Elas ficam disponíveis depois que você recolher cinco pedras vermelhas.
+---
