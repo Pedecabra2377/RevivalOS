@@ -40,8 +40,8 @@ description=Androidify permite que você crie avatares que combinam com a sua ap
 Os usuários poderão criar centenas de avatares diferentes. Você pode mudar as dimensões do corpo do robô: braços, pernas, cabeça, tronco… fazendo ele ficar maior, menor, mais largo ou mais estreito.
 ---
 icon=https://icons.iconarchive.com/icons/marcus-roberto/google-play/128/Google-Play-Movies-icon.png
-banner=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaRgIlHfNDoPNnzCpYcmRO82V0F0L1sBya1Q&usqp=CAU
-screenshot=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaRgIlHfNDoPNnzCpYcmRO82V0F0L1sBya1Q&usqp=CAU
+banner=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnUfk2GK0SFNZrKpdyvMSwgQeYEg6yDKfbwA&usqp=CAU
+screenshot=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnUfk2GK0SFNZrKpdyvMSwgQeYEg6yDKfbwA&usqp=CAU
 screenshot2=
 apk=https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=804414&key=0ed5cc7c9979a31c23da1bf6f0a3ede4d1d473ff
 name=Google Filmes & TV
