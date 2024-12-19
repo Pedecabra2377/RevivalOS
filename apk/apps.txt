@@ -19,7 +19,7 @@ developer=Google LLC
 description=O Google Play Music é uma aplicação oficial do Google para ouvir músicas, a partir de seu popular serviço diretamente em telemóveis Android, por meio de streaming, sem armazenamento de música na memória do dispositivo.
 A aplicação permite aos utilizadores ouvir uma coleção inteira de músicas de qualquer lugar. Todos os álbuns e músicas são armazenados on-line através de uma conta de utilizador, e nunca terá que se preocupar com o espaço de armazenamento no seu telemóvel. Além disso, qualquer música que compre vai aparecer automaticamente na sua coleção musical.
 ---
-icon=https://www.apkmirror.com/wp-content/themes/APKMirror/ap_resize/ap_resize.php?src=https%3A%2F%2Fdownloadr2.apkmirror.com%2Fwp-content%2Fuploads%2F2019%2F08%2F5d5430a221db5.png&w=192&h=192&q=100
+icon=https://icons.iconarchive.com/icons/marcus-roberto/google-play/128/Google-Play-Books-icon.png
 banner=https://www.webdesignmuseum.org/uploaded/apps-screens/android/2013/google-play-books-2013-02.jpg
 screenshot=https://www.webdesignmuseum.org/uploaded/apps-screens/android/2013/google-play-books-2013-03.jpg
 screenshot2=https://www.webdesignmuseum.org/uploaded/apps-screens/android/2013/google-play-books-2013-06.jpg
@@ -39,9 +39,9 @@ developer=Google LLC
 description=Androidify permite que você crie avatares que combinam com a sua aparência, ou com a dos seus amigos, com o aspecto do lendário robô verde do Android.
 Os usuários poderão criar centenas de avatares diferentes. Você pode mudar as dimensões do corpo do robô: braços, pernas, cabeça, tronco… fazendo ele ficar maior, menor, mais largo ou mais estreito.
 ---
-icon=https://www.apkmirror.com/wp-content/themes/APKMirror/ap_resize/ap_resize.php?src=https%3A%2F%2Fdownloadr2.apkmirror.com%2Fwp-content%2Fuploads%2F2014%2F10%2F542d2a1d97497.png&w=192&h=192&q=100
-banner=
-screenshot=
+icon=https://icons.iconarchive.com/icons/marcus-roberto/google-play/128/Google-Play-Movies-icon.png
+banner=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaRgIlHfNDoPNnzCpYcmRO82V0F0L1sBya1Q&usqp=CAU
+screenshot=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaRgIlHfNDoPNnzCpYcmRO82V0F0L1sBya1Q&usqp=CAU
 screenshot2=
 apk=https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=804414&key=0ed5cc7c9979a31c23da1bf6f0a3ede4d1d473ff
 name=Google Filmes & TV
