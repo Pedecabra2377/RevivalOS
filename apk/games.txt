@@ -43,7 +43,7 @@ description=Corte a corda para alimentar Om Nom com doces! 600 milhões de downl
 
 Um pacote misterioso chegou, e o monstrinho dentro dele tem apenas um pedido... DOCES! Colete estrelas douradas, descubra prêmios escondidos e desbloqueie novos níveis emocionantes neste jogo viciante, divertido e premiado baseado em física!
 ---
-icon=https://archive.org/download/zombie-tsunami-1.7.31_202402/icon.png
+icon=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsRx3ZdjIbW7q3vCoiVi8yC7YI8fROIaKluh5wtNsPgw&s
 banner=https://img.utdstc.com/screen/011/a86/011a86ded61f82be745a3d0a10e8012e44e8e6538de2e79f84607744a3c4722b:300
 screenshot=https://img.utdstc.com/screen/58e/aa0/58eaa005c42a7ce556e141e38a0eaad2afadb18677a75791cf24dc63100e4e11:300
 screenshot2=https://img.utdstc.com/screen/c44/533/c44533492eef28dac4898db962540e64355e6b1445f4fda95fdac1df7193a325:300
