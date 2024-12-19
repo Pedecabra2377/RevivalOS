@@ -48,3 +48,12 @@ name=Google Filmes & TV
 developer=Google LLC
 description=Google Filmes & TV é uma nova plataforma que vem para renovar quase inteiramente o Google Play Movies. Através de uma interface muito mais organizada, você encontrará centenas de filmes, séries, e programas de TV que você pode assistir com seu dispositivo Android.
 ---
+icon=https://1000logos.net/wp-content/uploads/2020/05/Google-Hangouts-Logo-2013.png
+banner=https://img.utdstc.com/screen/12e/689/12e689be67fc1a21469550e2fc38ab3278d91ed29ef594bb072d302f4963eb19:300
+screenshot=https://img.utdstc.com/screen/011/739/0117390949e24ae1c354b1c7faec234419f48f4b980a0c09da3f1233d61c9611:800
+screenshot2=https://img.utdstc.com/screen/12e/689/12e689be67fc1a21469550e2fc38ab3278d91ed29ef594bb072d302f4963eb19:300
+apk=https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=104647&key=d1b01f410869bad882ede474ca685ff822c14d45
+name=Hangouts
+developer=Google LLC
+description=O Hangouts é uma aplicação oficial Google com o objetivo de facilitar a comunicação direta e imediata entre dois utilizadores. A aplicação substitui o venerável 'Google Talk', adicionando algumas novas funcionalidades à clássica ferramenta de mensagens.
+---
