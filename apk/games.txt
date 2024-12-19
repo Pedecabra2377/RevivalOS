@@ -85,7 +85,7 @@ name=Fruit Ninja
 developer=Halfbrick Studios
 description=Fruit Ninja é um game para Android divertido e fácil de jogar. Você se transforma em ninja e detona frutas com os dedos
 ---
-icon=https://static.wikia.nocookie.net/despicableme/images/4/43/3.2.0.png/revision/latest/scale-to-width-down/250?cb=20150917042443
+icon=https://www.giantbomb.com/a/uploads/square_medium/9/93770/2336668-fruit.png
 banner=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjBfSY8iW4y5-uX_TUOe94lw-_9-jq9ZVuOo8j4r8WvsWUMo3-huoXblQ&s=10
 screenshot=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjBfSY8iW4y5-uX_TUOe94lw-_9-jq9ZVuOo8j4r8WvsWUMo3-huoXblQ&s=10
 screenshot2=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhtoytvhwE1XXCXH6QNNpVY-cAW_YVaSyMaQ&usqp=CAU
