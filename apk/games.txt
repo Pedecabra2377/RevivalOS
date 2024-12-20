@@ -76,7 +76,7 @@ Mais de 750 milhões de jogadores que baixaram este jogo não podem estar errado
 Faça o download GRÁTIS e comece sua aventura hoje!
 Jetpacks movidos a bala! Dragões mecânicos gigantes! Pássaros que atiram dinheiro! Deixe-me entrar neste "Juego Loco"!
 ---
-icon=https://www.apkmirror.com/wp-content/themes/APKMirror/ap_resize/ap_resize.php?src=https%3A%2F%2Fdownloadr2.apkmirror.com%2Fwp-content%2Fuploads%2F2022%2F01%2F05%2F61ec37bd7a184.png&w=192&h=192&q=100
+icon=https://www.giantbomb.com/a/uploads/square_medium/9/93770/2336668-fruit.png
 banner=https://cdn.prod.website-files.com/5fa23905123118739c5e21e2/66fb362949bd26dcef72f1d3_64dd8a5de4ae723b46abd674_FNCBG%20(1).jpg
 screenshot=https://cdn.prod.website-files.com/5fa23905123118739c5e21e2/66fb362949bd26dcef72f1d3_64dd8a5de4ae723b46abd674_FNCBG%20(1).jpg
 screenshot2=
@@ -85,7 +85,7 @@ name=Fruit Ninja
 developer=Halfbrick Studios
 description=Fruit Ninja é um game para Android divertido e fácil de jogar. Você se transforma em ninja e detona frutas com os dedos
 ---
-icon=https://www.giantbomb.com/a/uploads/square_medium/9/93770/2336668-fruit.png
+icon=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdfynTQwi5NdRh72fP5RnDZwam1JDB8lVXkQ&usqp=CAU
 banner=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjBfSY8iW4y5-uX_TUOe94lw-_9-jq9ZVuOo8j4r8WvsWUMo3-huoXblQ&s=10
 screenshot=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjBfSY8iW4y5-uX_TUOe94lw-_9-jq9ZVuOo8j4r8WvsWUMo3-huoXblQ&s=10
 screenshot2=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhtoytvhwE1XXCXH6QNNpVY-cAW_YVaSyMaQ&usqp=CAU
