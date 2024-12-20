@@ -93,3 +93,13 @@ apk=https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=540117
 name=Minion Rush
 developer=Gameloft SE
 description=Corra com os Minions no premiado e favorito dos fãs, Minion Rush! Corra o mais rápido que puder enquanto pula, esquiva, rola e derruba Minions para fora da pista em níveis desprezivelmente cheios de ação. Corra para coletar Bananas e jogue missões especiais emocionantes para aumentar sua pontuação enquanto desfruta de momentos inesperados de Minion
+---
+icon=https://www.apkmirror.com/wp-content/themes/APKMirror/ap_resize/ap_resize.php?src=https%3A%2F%2Fdownloadr2.apkmirror.com%2Fwp-content%2Fuploads%2F2024%2F04%2F34%2F6619922542644_com.robtopx.geometryjumplite.png&w=192&h=192&q=100
+banner=https://img.utdstc.com/screen/e8b/f18/e8bf185c09ca8b19d1a27e62e6429f4647f6628560f13948de74619c2730d380:300
+screenshot=https://img.utdstc.com/screen/e8b/f18/e8bf185c09ca8b19d1a27e62e6429f4647f6628560f13948de74619c2730d380:300
+screenshot2=https://img.utdstc.com/screen/4ae/47f/4ae47fe94cc8626459910a5f9c842c43aa7286d5dd7992d85ac9cf01377b56bc:300
+apk=https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=6256975&key=79f9adc74ac19a316c450c3212eac80dbd6878cd
+name=Geometry Dash Lite
+developer=Robtop Games
+description=Geometry Dash Lite é a versão lite do popular jogo de plataforma rítmico Geometry Dash. Esse jogo desafia os jogadores a passar por níveis cheios de obstáculos, enquanto mantêm o ritmo da música. Com seu design vibrante e jogabilidade viciante, o Geometry Dash Lite o manterá entretido por horas em níveis com desafios quase impossíveis
+---
