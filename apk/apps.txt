@@ -57,3 +57,12 @@ name=Hangouts
 developer=Google LLC
 description=O Hangouts é uma aplicação oficial Google com o objetivo de facilitar a comunicação direta e imediata entre dois utilizadores. A aplicação substitui o venerável 'Google Talk', adicionando algumas novas funcionalidades à clássica ferramenta de mensagens.
 ---
+icon=
+banner=
+screenshot=
+screenshot2=
+apk=https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=158581&key=910bf45e8a39f4b0067e5002f59884ecc7f80a32
+name=Facebook
+developer=Meta
+description=
+---
