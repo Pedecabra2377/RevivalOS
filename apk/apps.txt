@@ -10,9 +10,9 @@ developer=Google LLC
 description=YouTube é um aplicativo que permite assistir e compartilhar vídeos on-line de forma rápida e intuitiva. Essa plataforma popular, de propriedade do Google, oferece acesso a um catálogo quase infinito de conteúdo audiovisual que você pode reproduzir facilmente em seu smartphone. E o melhor de tudo é que você pode aproveitar as funcionalidades básicas da ferramenta gratuitamente.
 ---
 icon=https://icons.iconarchive.com/icons/marcus-roberto/google-play/512/Google-Play-Music-icon.png
-banner=https://img.utdstc.com/screen/937/ea9/937ea92939b9bfb16d873117378a641e805ec6f874b6474566eedb48642e4a4b:300
-screenshot=https://img.utdstc.com/screen/937/ea9/937ea92939b9bfb16d873117378a641e805ec6f874b6474566eedb48642e4a4b:300
-screenshot2=https://img.utdstc.com/screen/940/a03/940a03900bbb09677ff99816f06ba3b5bbb2aca6fabdbf2aef6244437b2c2bf7:300
+banner=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr96PfwfvV4omgzhKxxR6-X9dkJIhlDlU6TNtmZzJnhCazYzq0AeHnkEU&s=10
+screenshot=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr96PfwfvV4omgzhKxxR6-X9dkJIhlDlU6TNtmZzJnhCazYzq0AeHnkEU&s=10
+screenshot2=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdql5C4rrbz9qEJY9ePRdGYUX3maPc02EpuVGgJXhsnStAkgnRnxd-n0c&s=10
 apk=https://archive.org/download/google-play-music/Google%20Play%20Music.apk
 name=Google Play Música
 developer=Google LLC
