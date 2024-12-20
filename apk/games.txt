@@ -103,3 +103,12 @@ name=Geometry Dash Lite
 developer=Robtop Games
 description=Geometry Dash Lite é a versão lite do popular jogo de plataforma rítmico Geometry Dash. Esse jogo desafia os jogadores a passar por níveis cheios de obstáculos, enquanto mantêm o ritmo da música. Com seu design vibrante e jogabilidade viciante, o Geometry Dash Lite o manterá entretido por horas em níveis com desafios quase impossíveis
 ---
+icon=https://images1.androeed.store/ico/2024/08/01/ico-papa39s-pizzeria-to-go-1664182922-100.webp
+banner=https://images1.androeed.store/screenshotes/2024/09/09/___simg-papa39s-pizzeria-to-go-893942.webp
+screenshot=https://images1.androeed.store/screenshotes/2024/09/09/___simg-papa39s-pizzeria-to-go-893942.webp
+screenshot2=https://images1.androeed.store/screenshotes/2024/09/09/___simg-papa39s-pizzeria-to-go-893943.webp
+apk=https://a37.androeed.store/files/2024/12/10/papas-pizzeria-to-go-113-androeed.store-0-1707336500.apk
+name=Papas Pizzeria To Go!
+developer=Flipline Studios
+description=Um emocionante projeto de jogo, que é um colorido simulador de culinária para Android, onde você deve assumir o controle de uma pequena pizzaria e tentar torná-la o lugar mais conhecido da cidade. Aqui você precisará gerenciar diversos aspectos, preparar deliciosas pizzas com diversos ingredientes, agradar clientes famintos e aumentar a reputação da instituição. Você consegue fazer da pizzaria o lugar mais popular e delicioso da cidade?
+---
