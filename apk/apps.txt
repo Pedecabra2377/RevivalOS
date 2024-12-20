@@ -1,6 +1,6 @@
 # Example entry in games.txt or apps.txt
 
-icon=https://www.apkmirror.com/wp-content/themes/APKMirror/ap_resize/ap_resize.php?src=https%3A%2F%2Fdownloadr2.apkmirror.com%2Fwp-content%2Fuploads%2F2017%2F06%2F593a903159c95.png&w=192&h=192&q=100
+icon=https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png
 banner=https://thenextweb.com/wp-content/blogs.dir/1/files/2013/08/1_Screenshot_Nexus4_EN.png
 screenshot=https://thenextweb.com/wp-content/blogs.dir/1/files/2013/08/1_Screenshot_Nexus4_EN.png
 screenshot2=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlt1NOUqJoziZUHu_KRhIB7h4IH-a7E3DuQApJGnTmgQsnG5FuCmjmsfZJ&s=10
@@ -57,12 +57,12 @@ name=Hangouts
 developer=Google LLC
 description=O Hangouts é uma aplicação oficial Google com o objetivo de facilitar a comunicação direta e imediata entre dois utilizadores. A aplicação substitui o venerável 'Google Talk', adicionando algumas novas funcionalidades à clássica ferramenta de mensagens.
 ---
-icon=https://static.wikia.nocookie.net/logopedia/images/0/09/Facebook_First_App_Icon.svg/revision/latest/scale-to-width-down/200?cb=20201226080716
-banner=
-screenshot=
+icon=https://downloadr2.apkmirror.com/wp-content/uploads/2015/03/5515e0c388e97.png
+banner=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM7xOAVxlWJIF_L89Buv8i-nb7OGA-bGfbFyzy0BIEgCCd26Z_hGVYtDA&s=10
+screenshot=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM7xOAVxlWJIF_L89Buv8i-nb7OGA-bGfbFyzy0BIEgCCd26Z_hGVYtDA&s=10
 screenshot2=
 apk=https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=158581&key=910bf45e8a39f4b0067e5002f59884ecc7f80a32
 name=Facebook
 developer=Meta
-description=
+description=Facebook é o aplicativo oficial dessa popular rede social de propriedade do conglomerado norte-americano Meta. É uma plataforma de mídia social com mais de três bilhões de usuários ativos mensais. Ele pode ser acessado de forma conveniente em praticamente qualquer lugar: de dispositivos Android a consoles de jogos, smart TVs ou navegadores de PC
 ---
