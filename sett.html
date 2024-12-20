@@ -3,85 +3,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <meta charset="UTF-8" />
  <link rel="stylesheet" href="css-app.css">
-<script>
-function criarCookie(nome, valor, dias) {
-const data = new Date();
-data.setTime(data.getTime() + (dias * 24 * 60 * 60 * 1000));
-document.cookie = `${nome}=${valor};expires=${data.toUTCString()};path=/`;
-}
-
-const username = document.getElementById('username').value;
-const password = document.getElementById('password').value;
-
-criarCookie('logged', 'true', 30);
-criarCookie('userName', username, 30);
-criarCookie('userEmail', username, 30);
-criarCookie('userPassword', password, 30);
-
-function verificarCookie() {
-const cookies = document.cookie.split(';');
-for (let i = 0; i < cookies.length; i++) {
-const cookie = cookies[i].trim();
-if (cookie.startsWith('logged=')) {
-const valor = cookie.split('=')[1];
-if (valor === 'true') {
-return true;
-}
-}
-}
-return false;
-}
-
-if (verificarCookie()) {
-document.getElementById('menu-user').style.display = 'block';
-document.getElementById('register-btn').style.display = 'none';
-document.getElementById('user-name').innerHTML = getCookie('userName');
-document.getElementById('user-email').innerHTML = getCookie('userEmail');
-} else {
-document.getElementById('register-btn').style.display = 'block';
-document.getElementById('menu-user').style.display = 'none';
-}
-
-function getCookie(nome) {
-const cookies = document.cookie.split(';');
-for (let i = 0; i < cookies.length; i++) {
-const cookie = cookies[i].trim();
-if (cookie.startsWith(`${nome}=`)) {
-return cookie.split('=')[1];
-}
-}
-return '';
-}
-
-function apagarCookie(nome) {
-document.cookie = `${nome}=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/`;
-}
-
-document.querySelector('#menu-user li:last-child a').addEventListener('click', () => {
-apagarCookie('logged');
-apagarCookie('userName');
-apagarCookie('userEmail');
-apagarCookie('userPassword');
-window.location.href = 'login.html';
-});
-</script>
- <style>
-  body {
-    text-align: center;
-
-  #content {
-    margin: 0 auto;
-    width: 750px;
-  }
-  #error-section {
-    background-color: #d2e3fb;
-    border: 1px solid #a1b4d9;
-    color: #666;
-    font-weight: bold;
-    padding: 12px 0;
-  }
-
-  </style>
+<link rel="stylesheet" type="text/css" href="holo-base-elements.css" />
+		<link rel="stylesheet" type="text/css" href="holo-kk-dark-elements.css" />
+		<link rel="stylesheet" type="text/css" href="holo-base-widgets.css" />
+		<link rel="stylesheet" type="text/css" href="holo-kk-dark-widgets.css" />
+  <style type="text/css">
   </head>
   <body>
 
@@ -91,13 +17,9 @@ window.location.href = 'login.html';
    <div style="color: white;" id="title">Droid Market - Opções</div>    
   </div>
  <nav>
-<ul id="menu-user">
-<li><a href="#" id="user-name"></a></li>
-<li><a href="#" id="user-email"></a></li>
-<li><a href="#">Minha Conta</a></li>
-<li><a href="#">Sair</a></li>
+<ul id="menu-sett">
+
 </ul>
-<button id="register-btn" style="display:none;">Registrar</button>
 </nav>  
 <center>
 
