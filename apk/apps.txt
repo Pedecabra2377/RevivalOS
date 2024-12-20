@@ -1,10 +1,10 @@
 # Example entry in games.txt or apps.txt
 
-icon=thumbnails/yt.png
-banner=thumbnails/yt2.png
-screenshot=thumbnails/yt2.png
-screenshot2=thumbnails/yt2.png
-apk=apk/YouTube.apk
+icon=https://www.apkmirror.com/wp-content/themes/APKMirror/ap_resize/ap_resize.php?src=https%3A%2F%2Fdownloadr2.apkmirror.com%2Fwp-content%2Fuploads%2F2017%2F06%2F593a903159c95.png&w=192&h=192&q=100
+banner=https://thenextweb.com/wp-content/blogs.dir/1/files/2013/08/1_Screenshot_Nexus4_EN.png
+screenshot=https://thenextweb.com/wp-content/blogs.dir/1/files/2013/08/1_Screenshot_Nexus4_EN.png
+screenshot2=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlt1NOUqJoziZUHu_KRhIB7h4IH-a7E3DuQApJGnTmgQsnG5FuCmjmsfZJ&s=10
+apk=https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=896&key=d3c3c5ded0dc268b9b195a370ec282db0c43d0a3
 name=YouTube
 developer=Google LLC
 description=YouTube é um aplicativo que permite assistir e compartilhar vídeos on-line de forma rápida e intuitiva. Essa plataforma popular, de propriedade do Google, oferece acesso a um catálogo quase infinito de conteúdo audiovisual que você pode reproduzir facilmente em seu smartphone. E o melhor de tudo é que você pode aproveitar as funcionalidades básicas da ferramenta gratuitamente.
@@ -57,7 +57,7 @@ name=Hangouts
 developer=Google LLC
 description=O Hangouts é uma aplicação oficial Google com o objetivo de facilitar a comunicação direta e imediata entre dois utilizadores. A aplicação substitui o venerável 'Google Talk', adicionando algumas novas funcionalidades à clássica ferramenta de mensagens.
 ---
-icon=
+icon=https://static.wikia.nocookie.net/logopedia/images/0/09/Facebook_First_App_Icon.svg/revision/latest/scale-to-width-down/200?cb=20201226080716
 banner=
 screenshot=
 screenshot2=
