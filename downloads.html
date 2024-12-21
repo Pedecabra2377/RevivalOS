@@ -155,6 +155,116 @@ xhr.send();
       searchDiv.style.display = isHidden ? "block" : "none";
     }
   </script>
+<script>
+function carregarDetalhesApp(id) {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'apk/apps.txt', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      const entries = xhr.responseText.split('---');
+      const app = entries[id];
+      if (app) {
+        const lines = app.split('\n');
+        const info = {};
+        for (const line of lines) {
+          const [chave, valor] = line.split('=');
+          info[chave.trim()] = valor.trim();
+        }
+        
+        document.getElementById('appIcon').src = info.icon;
+        document.getElementById('appTitle').innerText = info.name;
+        document.getElementById('appCreator').innerText = info.developer;
+        document.getElementById('description').innerText = info.description;
+        
+        setCookie('app-escolhido', id);
+        
+        const instalado = getCookie(`app-${id}`);
+        if (instalado) {
+          document.getElementById('installButton').innerText = 'Já instalado';
+        } else {
+          document.getElementById('installButton').innerText = 'Instalar';
+        }
+      }
+    }
+  };
+  xhr.send();
+}
+
+function setCookie(nome, valor) {
+  document.cookie = `${nome}=${valor};path=/`;
+}
+
+function getCookie(nome) {
+  const cookies = document.cookie.split(';');
+  for (const cookie of cookies) {
+    const [nomeCookie, valor] = cookie.split('=');
+    if (nomeCookie.trim() === nome) {
+      return valor;
+    }
+  }
+  return null;
+}
+
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get('id');
+carregarDetalhesApp(id);
+``
+</script>
+<script>
+function carregarDetalhesApp(id) {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'apk/games.txt', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      const entries = xhr.responseText.split('---');
+      const app = entries[id];
+      if (app) {
+        const lines = app.split('\n');
+        const info = {};
+        for (const line of lines) {
+          const [chave, valor] = line.split('=');
+          info[chave.trim()] = valor.trim();
+        }
+        
+        document.getElementById('appIcon').src = info.icon;
+        document.getElementById('appTitle').innerText = info.name;
+        document.getElementById('appCreator').innerText = info.developer;
+        document.getElementById('description').innerText = info.description;
+        
+        setCookie('app-escolhido', id);
+        
+        const instalado = getCookie(`app-${id}`);
+        if (instalado) {
+          document.getElementById('installButton').innerText = 'Já instalado';
+        } else {
+          document.getElementById('installButton').innerText = 'Instalar';
+        }
+      }
+    }
+  };
+  xhr.send();
+}
+
+function setCookie(nome, valor) {
+  document.cookie = `${nome}=${valor};path=/`;
+}
+
+function getCookie(nome) {
+  const cookies = document.cookie.split(';');
+  for (const cookie of cookies) {
+    const [nomeCookie, valor] = cookie.split('=');
+    if (nomeCookie.trim() === nome) {
+      return valor;
+    }
+  }
+  return null;
+}
+
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get('id');
+carregarDetalhesApp(id);
+``
+</script>
  <font color="#C2C2C2">Atualização</font>
     <!-- Container for Games List -->
     <div id="games-list" class="apppage-container"></div>
