@@ -11,7 +11,29 @@
 		<link rel="stylesheet" type="text/css" href="holo-base-widgets.css" />
 		<link rel="stylesheet" type="text/css" href="holo-kk-dark-widgets.css" />
   <style type="text/css">
+<script>
+const formLogin = document.getElementById('login-form');
 
+formLogin.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+  if (username === 'exemplo@email.com' && password === 'senha123') {
+    setCookie('logado', true, 30);
+    window.location.href = 'index.html';
+  } else {
+    alert('Credenciais inválidas!');
+  }
+});
+
+function setCookie(nome, valor, dias) {
+  const data = new Date();
+  data.setTime(data.getTime() + (dias * 24 * 60 * 60 * 1000));
+  document.cookie = `${nome}=${valor};expires=${data.toUTCString()};path=/`;
+}
+</script>
 
 		</style>
 
