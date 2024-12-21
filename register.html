@@ -11,7 +11,67 @@
 		<link rel="stylesheet" type="text/css" href="holo-base-widgets.css" />
 		<link rel="stylesheet" type="text/css" href="holo-kk-dark-widgets.css" />
   <style type="text/css">
-<script type="text/javascript" src="login.js"></script>
+<script>
+const form = document.getElementById('form-cadastro');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const email = document.getElementById('email').value;
+  const cmail = document.getElementById('cmail').value;
+  const password = document.getElementById('password').value;
+  const cpassword = document.getElementById('cpassword').value;
+  const lembrar = document.getElementById('lembrar').checked;
+
+  if (email !== cmail) {
+    alert('E-mails não coincidem!');
+    return;
+  }
+
+  if (password !== cpassword) {
+    alert('Senhas não coincidem!');
+    return;
+  }
+
+  if (email.length < 5 || !email.includes('@')) {
+    alert('E-mail inválido!');
+    return;
+  }
+
+  if (password.length < 6) {
+    alert('Senha muito curta!');
+    return;
+  }
+
+  if (lembrar) {
+    setCookie('usuario', JSON.stringify({ email, password }), 30);
+  }
+});
+
+function setCookie(nome, valor, dias) {
+  const data = new Date();
+  data.setTime(data.getTime() + (dias * 24 * 60 * 60 * 1000));
+  document.cookie = `${nome}=${valor};expires=${data.toUTCString()};path=/`;
+}
+
+function getCookie(nome) {
+  const cookies = document.cookie.split(';');
+  for (const cookie of cookies) {
+    const [nomeCookie, valor] = cookie.split('=');
+    if (nomeCookie.trim() === nome) {
+      return JSON.parse(valor);
+    }
+  }
+  return null;
+}
+
+const usuarioLembrado = getCookie('usuario');
+if (usuarioLembrado) {
+  document.getElementById('email').value = usuarioLembrado.email;
+  document.getElementById('password').value = usuarioLembrado.password;
+  document.getElementById('lembrar').checked = true;
+}
+</script>
 			h2 {
 				text-transform: uppercase;
 				font-size: 90%;
@@ -42,16 +102,16 @@
   
   </div>
 <div>
-<form>
-               
-                <input type="email" name="email" id="email" placeholder="e-mail">
-                <input type="email" name="cmail" id="cmail" placeholder="confirmar o e-mail">
-                <input type="password" name="password" id="password" placeholder="senha">
-                <input type="password" name="cpassword" id="cpassword" placeholder="confirmar a senha">
-
-                
-                <button>Criar conta</button>
-            </div>
+<form id="form-cadastro">
+<input type="email" name="email" id="email" placeholder="E-mail">
+<input type="email" name="cmail" id="cmail" placeholder="Confirmar E-mail">
+<input type="password" name="password" id="password" placeholder="Senha">
+<input type="password" name="cpassword" id="cpassword" placeholder="Confirmar Senha">
+<button id="btn-cadastrar">Criar Conta</button>
+<label>
+<input type="checkbox" id="lembrar">
+Lembrar-me
+</label>
 </form>
 </div>
 </div>
