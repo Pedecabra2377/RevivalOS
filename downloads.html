@@ -63,6 +63,61 @@ const conteudoArmazenado = localStorage.getItem('conteudo');
 };
 xhr.send();
 </script>
+<script>
+const container = document.getElementById('games-list');
+
+const arquivo = 'games.txt';
+const xhr = new XMLHttpRequest();
+
+xhr.open('GET', arquivo, true);
+xhr.onload = function() {
+if (xhr.status === 200) {
+const novoConteudo = xhr.responseText;
+const conteudoArmazenado = localStorage.getItem('conteudo');
+
+```if (novoConteudo !== conteudoArmazenado) {
+  localStorage.setItem('conteudo', novoConteudo);
+  const appsNovos = novoConteudo.split('---');
+  const appsAntigos = conteudoArmazenado.split('---');
+
+  container.innerHTML = '';
+
+  for (let i = 0; i < appsNovos.length; i++) {
+    const camposNovos = appsNovos[i].split('\n');
+    const camposAntigos = appsAntigos[i].split('\n');
+
+    let alteracoes = [];
+
+    for (let j = 0; j < camposNovos.length; j++) {
+      const campoNovo = camposNovos[j].split('=');
+      const campoAntigo = camposAntigos[j].split('=');
+
+      if (campoNovo[1] !== campoAntigo[1]) {
+        alteracoes.push(`${campoNovo[0]}: ${campoNovo[1]}`);
+      }
+    }
+
+    if (alteracoes.length > 0) {
+      const item = document.createElement('div');
+      item.classList.add('update-item');
+
+      item.innerHTML = `
+        <h2>Atualização ${i+1}</h2>
+        <p>Alterações:</p>
+        <ul>
+          ${alteracoes.map(alteracao => `<li>${alteracao}</li>`).join('')}
+        </ul>
+      `;
+
+      container.appendChild(item);
+    }
+  }
+}
+```
+}
+};
+xhr.send();
+</script>
 </head>
 <body>
   <div id="screen">
@@ -100,9 +155,11 @@ xhr.send();
       searchDiv.style.display = isHidden ? "block" : "none";
     }
   </script>
-
+ <font color="#C2C2C2">Atualização</font>
     <!-- Container for Games List -->
     <div id="games-list" class="apppage-container"></div>
+<font color="#C2C2C2">Downloads</font>
+<div id="downloads" class="apppage-container"></div>
   </div>
 </body>
 </html>
